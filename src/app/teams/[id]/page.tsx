@@ -49,7 +49,7 @@ export default async function TeamPage({
             alt=""
             fill
             priority
-            className="object-cover opacity-35"
+            className="object-cover opacity-50"
             sizes="100vw"
           />
         ) : null}
