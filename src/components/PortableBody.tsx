@@ -1,6 +1,7 @@
 "use client";
 
 import { PortableText, type PortableTextComponents } from "@portabletext/react";
+import type { ArticleBlock } from "@/lib/data";
 import { urlFor } from "@/sanity/image";
 
 const components: PortableTextComponents = {
@@ -11,7 +12,7 @@ const components: PortableTextComponents = {
       return (
         <figure className="my-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={src} alt={value.alt || ""} className="w-full rounded-2xl" />
+          <img src={src} alt={value.alt || ""} className="h-auto w-full rounded-2xl" />
         </figure>
       );
     },
@@ -57,13 +58,88 @@ const components: PortableTextComponents = {
   },
 };
 
+function ArticleBlocks({ blocks }: { blocks: ArticleBlock[] }) {
+  return (
+    <div className="article-blocks">
+      {blocks.map((block, index) => {
+        const key = `${block.type}-${index}`;
+        switch (block.type) {
+          case "h2":
+            return (
+              <h2 key={key} className="mt-8 text-2xl font-extrabold text-navy">
+                {block.text}
+              </h2>
+            );
+          case "h3":
+            return (
+              <h3 key={key} className="mt-6 text-xl font-bold text-navy">
+                {block.text}
+              </h3>
+            );
+          case "ul":
+            return (
+              <ul key={key} className="mt-4 list-disc space-y-2 pl-6 text-[17px] text-muted">
+                {block.items.map((item) => (
+                  <li key={item.slice(0, 48)}>{item}</li>
+                ))}
+              </ul>
+            );
+          case "table":
+            return (
+              <div key={key} className="mt-6 overflow-x-auto rounded-2xl border border-line bg-white">
+                {block.caption ? (
+                  <p className="border-b border-line bg-bg-3 px-4 py-3 text-sm font-bold text-navy sm:px-5">
+                    {block.caption}
+                  </p>
+                ) : null}
+                <table className="w-full min-w-[520px] border-collapse text-left text-[15px] sm:text-[16px]">
+                  <thead>
+                    <tr className="bg-ipl text-white">
+                      {block.headers.map((header) => (
+                        <th key={header} className="px-4 py-3 font-bold sm:px-5">
+                          {header}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {block.rows.map((row) => (
+                      <tr key={row.join("|")} className="border-t border-line odd:bg-white even:bg-bg-3/60">
+                        {row.map((cell) => (
+                          <td key={cell} className="px-4 py-3 align-top text-muted sm:px-5">
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            );
+          default:
+            return (
+              <p key={key} className="mt-3.5 text-[17px] text-muted">
+                {block.text}
+              </p>
+            );
+        }
+      })}
+    </div>
+  );
+}
+
 export function PortableBody({
   value,
   fallback = [],
+  blocks,
 }: {
   value?: unknown[];
   fallback?: string[];
+  blocks?: ArticleBlock[];
 }) {
+  if (Array.isArray(blocks) && blocks.length) {
+    return <ArticleBlocks blocks={blocks} />;
+  }
   if (Array.isArray(value) && value.length) {
     return <PortableText value={value} components={components} />;
   }

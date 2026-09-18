@@ -238,7 +238,18 @@ export async function getPage(slug: string): Promise<PageContent> {
 export async function getArticles(): Promise<Article[]> {
   const docs = await fetchSanity<SanityArticle[]>(articlesQuery);
   if (!docs?.length) return NEWS;
-  return docs.map(mapArticle);
+  return docs.map((doc) => {
+    const mapped = mapArticle(doc);
+    const staticArticle = getStaticArticle(mapped.id);
+    if (!staticArticle?.blocks?.length && !staticArticle?.coverUrl) return mapped;
+    return {
+      ...mapped,
+      coverUrl: staticArticle.coverUrl || mapped.coverUrl,
+      blocks: staticArticle.blocks?.length ? staticArticle.blocks : mapped.blocks,
+      body: staticArticle.blocks?.length ? staticArticle.body : mapped.body,
+      excerpt: staticArticle.blocks?.length ? staticArticle.excerpt : mapped.excerpt,
+    };
+  });
 }
 
 export async function getBlogs(): Promise<Article[]> {
@@ -247,9 +258,20 @@ export async function getBlogs(): Promise<Article[]> {
 }
 
 export async function getArticleBySlug(id: string): Promise<Article | undefined> {
+  const staticArticle = getStaticArticle(id);
   const doc = await fetchSanity<SanityArticle>(articleBySlugQuery, { slug: id });
-  if (doc?.id) return mapArticle(doc);
-  return getStaticArticle(id);
+  if (doc?.id) {
+    const mapped = mapArticle(doc);
+    if (!staticArticle?.blocks?.length && !staticArticle?.coverUrl) return mapped;
+    return {
+      ...mapped,
+      coverUrl: staticArticle?.coverUrl || mapped.coverUrl,
+      blocks: staticArticle?.blocks?.length ? staticArticle.blocks : mapped.blocks,
+      body: staticArticle?.blocks?.length ? staticArticle.body : mapped.body,
+      excerpt: staticArticle?.blocks?.length ? staticArticle.excerpt : mapped.excerpt,
+    };
+  }
+  return staticArticle;
 }
 
 export async function getVideos() {

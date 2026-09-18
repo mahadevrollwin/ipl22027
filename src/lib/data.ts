@@ -207,6 +207,13 @@ export type NewsHero = "ember" | "red" | "teal" | "pink" | "gold" | "blue" | "vi
 
 export type ArticleKind = "news" | "blog" | "report";
 
+export type ArticleBlock =
+  | { type: "p"; text: string }
+  | { type: "h2"; text: string }
+  | { type: "h3"; text: string }
+  | { type: "ul"; items: string[] }
+  | { type: "table"; caption?: string; headers: string[]; rows: string[][] };
+
 export type Article = {
   id: string;
   tag: string;
@@ -218,6 +225,7 @@ export type Article = {
   coverUrl?: string;
   portableBody?: unknown[];
   body: string[];
+  blocks?: ArticleBlock[];
 };
 
 export const NEWS: Article[] = [
@@ -228,13 +236,114 @@ export const NEWS: Article[] = [
     kind: "news",
     title: "IPL 2027 mini-auction set to return to India",
     excerpt:
-      "After three overseas auctions, the Governing Council is pushing to host the December mini-auction on home soil. Venue still TBA.",
+      "After three consecutive years of globe-trotting across the Middle East, the Indian Premier League auction gavel is finally returning home.",
     hero: "ember",
+    coverUrl: "/news/auction-india.jpg",
     body: [
-      "The IPL 2027 player auction is expected back in India for the first time since Kochi hosted the 2023 sale. Reports after the Governing Council meeting on 15 September 2026 say the event will be a mini-auction, likely in the mid-December window.",
-      "Dubai (2024), Jeddah (2025) and Abu Dhabi (2026) hosted the last three auctions. IPL chairman Arun Dhumal has said the league wants the smaller 2027 sale in India, with hotel inventory during wedding season the main constraint on picking a city.",
-      "More than 100 five-star rooms are typically needed for franchise delegations. The host city will be confirmed once accommodation and a suitable arena line up. The next mega auction, due the following cycle, could again be staged overseas.",
-      "For fans, an India auction means a primetime, home-broadcast spectacle in the weeks before Season 20. Retention lists and purse remaining will drop first; this site will track both the moment they are published.",
+      "After three consecutive years of globe-trotting across the Middle East, the Indian Premier League auction gavel is finally returning home. The BCCI and the IPL Governing Council have confirmed that the mini-auction ahead of the 2027 season will take place on Indian soil.",
+      "The decision ends a wanderlust phase that saw team owners, think tanks, and broadcast crews pack their bags for Dubai, Jeddah, and Abu Dhabi. While those desert stopovers cemented the tournament’s international clout, bringing the auction back to India restores a distinct grassroots buzz to the league’s most strategic off-field showdown.",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "After three consecutive years of globe-trotting across the Middle East, the Indian Premier League auction gavel is finally returning home. The BCCI and the IPL Governing Council have confirmed that the mini-auction ahead of the 2027 season will take place on Indian soil.",
+      },
+      {
+        type: "p",
+        text: "The decision ends a wanderlust phase that saw team owners, think tanks, and broadcast crews pack their bags for Dubai, Jeddah, and Abu Dhabi. While those desert stopovers cemented the tournament’s international clout, bringing the auction back to India restores a distinct grassroots buzz to the league’s most strategic off-field showdown.",
+      },
+      { type: "h2", text: "The Three-Year Overseas Odyssey" },
+      {
+        type: "p",
+        text: "The IPL’s overseas auction era was an ambitious experiment in sports marketing:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Dubai (2024): Marked the IPL’s maiden auction venture abroad, offering world-class infrastructure and testing neutral-ground logistics.",
+          "Jeddah (2025): Raised the stakes with a high-glamour, two-day mega-auction held in Saudi Arabia, underscoring the Gulf region's growing appetite for cricket investments.",
+          "Abu Dhabi (2026): Provided a sleek, high-tech backdrop for tactical squad fine-tuning.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Taking the auction outside India proved the IPL could command global attention purely through business negotiations and player tables. Yet, the sheen of international convention centers couldn't entirely mask the operational friction that came with it.",
+      },
+      { type: "h2", text: "Why the Shift Back? Logistics, Fatigue, and Common Sense" },
+      {
+        type: "p",
+        text: "The primary catalyst for bringing the 2027 mini-auction back home boils down to practical governance:",
+      },
+      {
+        type: "table",
+        caption: "Overseas Auction vs. Home Soil Mini-Auction",
+        headers: ["International Venues", "Indian Return (2027)"],
+        rows: [
+          ["Visas, travel logistics", "Minimal travel friction for franchises"],
+          ["Multi-day staff disruption", "Compact 1-day targeted bidding setup"],
+          ["High operational overhead", "Streamlined broadcast and team operations"],
+          ["Distant fan engagement", "Direct domestic media and fan resonance"],
+        ],
+      },
+      {
+        type: "p",
+        text: "For a mega-auction, dispatching extensive scouting groups, analysts, owners, and legal teams across borders makes tactical sense. Franchises build entire three-year squads from scratch.",
+      },
+      {
+        type: "p",
+        text: "A mini-auction, however, is a swift, surgical affair. Teams rarely buy more than three to six players to plug tactical holes. Several franchises voiced valid concerns regarding the disproportionate logistics of flying 15-to-20-member delegations abroad for an event wrapped up in an afternoon. The BCCI listened, acknowledging that a streamlined domestic setup delivers identical broadcast drama without the bureaucratic hurdles.",
+      },
+      { type: "h2", text: "The Wedding Season Conundrum" },
+      {
+        type: "p",
+        text: "Hosting an IPL auction in India during the November–December window involves an unusual logistical rival: India’s peak winter wedding calendar.",
+      },
+      {
+        type: "p",
+        text: "As IPL Chairman Arun Dhumal highlighted, room inventory has historically been the biggest roadblock to hosting late-year auctions at home. An IPL auction requires:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Over 100 five-star rooms locked down for franchise owners, analysts, and support staff.",
+          "Dedicated, uninterrupted banquet ballrooms for setup, rehearsals, and the live auction day.",
+          "Secure wings for BCCI officials, tech operators, and multi-network broadcast crew teams.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Securing that level of luxury inventory on short notice in major metros like Mumbai or Delhi during auspicious wedding dates has often proven near-impossible. For 2027, the BCCI is vetting tier-one and tier-two destinations early. Cities like Kochi (which successfully hosted the manic 2023 auction), Bengaluru, Kolkata, or Jaipur remain prime candidates depending on hotel block availability.",
+      },
+      { type: "h2", text: "The Mechanics of the Mini-Auction: High Purses, Higher Chaos" },
+      {
+        type: "p",
+        text: "Mini-auctions often produce more erratic bidding wars than mega-auctions. With core playing XIs largely established, franchises don’t need to spread their purse across 20 slots. Instead, they arrive with 20 to 30 crore rupees targeting just one or two specific player profiles.",
+      },
+      {
+        type: "p",
+        text: "Whether it’s a death-overs tearaway, an explosive left-handed finisher, or an overseas spin-bowling all-rounder, mini-auctions consistently break individual price records due to sheer supply-and-demand imbalance. Returning to a domestic media environment ensures that this high-stakes table theatre will play out under intense local scrutiny.",
+      },
+      { type: "h2", text: "The Tactical Wildcard: The Impact Player Rule" },
+      {
+        type: "p",
+        text: "The 2027 auction won't just be about venues; it will be defined by what rules govern the pitch. The IPL Governing Council is actively reviewing the controversial Impact Player rule.",
+      },
+      {
+        type: "p",
+        text: "Prominent international voices and senior Indian players—including Rohit Sharma and Shubman Gill—have pointed out that twelve-a-side dynamics undermine traditional all-rounders. If the BCCI decides to scrap or tweak the substitute rule ahead of 2027, every team’s purse strategy will change overnight:",
+      },
+      {
+        type: "ul",
+        items: [
+          "If the rule stays: Teams can continue hoarding specialist power-hitters and express tailenders without worrying about batting depth.",
+          "If the rule goes: True multi-skill all-rounders will command astronomical bidding wars, turning the mini-auction into an intense scramble for balance.",
+        ],
+      },
+      { type: "h2", text: "Looking Ahead" },
+      {
+        type: "p",
+        text: "Moving the IPL 2027 auction back to India is a pragmatic, welcome recalibration. While overseas events showcased the IPL’s global footprint, the heart of the tournament belongs on home soil. As franchise boardrooms begin auditing their rosters and tracking availability windows, Indian cricket fans can prepare for an electric winter bidding battle right in their own backyard.",
+      },
     ],
   },
   {

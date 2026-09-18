@@ -44,9 +44,13 @@ export default async function ArticlePage({
       <p className="mt-4 max-w-[52ch] text-[17px] text-muted">{article.excerpt}</p>
       {article.coverUrl ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={article.coverUrl} alt="" className="mt-6 w-full rounded-2xl" />
+        <img
+          src={article.coverUrl}
+          alt=""
+          className="mt-6 h-auto w-full rounded-2xl object-contain"
+        />
       ) : null}
-      <PortableBody value={article.portableBody} fallback={article.body} />
+      <PortableBody value={article.portableBody} fallback={article.body} blocks={article.blocks} />
       <p className="mt-7">
         <Link href={article.kind === "blog" ? "/blogs" : "/news"} className="text-sm font-bold text-teal">
           ← {article.kind === "blog" ? "All blogs" : "All news"}
