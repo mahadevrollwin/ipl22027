@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FormPips } from "@/components/TeamBadge";
 import { PlayerCard } from "@/components/PlayerCard";
+import { TeamSlider } from "@/components/TeamSlider";
 import { Kicker, Wrap } from "@/components/ui";
 import { getTeamBySlug, getTeams } from "@/lib/cms";
 import { groupPlayersByRole } from "@/lib/teamEnrich";
@@ -33,7 +34,7 @@ export default async function TeamPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const team = await getTeamBySlug(id);
+  const [team, teams] = await Promise.all([getTeamBySlug(id), getTeams()]);
   if (!team) notFound();
 
   const about = team.about?.length ? team.about : [team.blurb];
@@ -233,6 +234,7 @@ export default async function TeamPage({
         <Link href="/teams" className="text-sm font-bold text-ipl hover:underline">
           ← Back to all teams
         </Link>
+        <TeamSlider teams={teams} excludeId={team.id} />
       </Wrap>
     </div>
   );
