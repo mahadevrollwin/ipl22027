@@ -584,12 +584,110 @@ export const NEWS: Article[] = [
     kind: "report",
     title: "Final recap: Kohli steers RCB home in Ahmedabad",
     excerpt:
-      "GT 155/8, RCB 161/5 in 18 overs. A five-wicket win, a second straight title, a night owned by No. 18.",
+      "There are nights that belong to the record books, and then there are nights etched straight into cricketing folklore. The IPL 2026 Final at Ahmedabad belonged firmly to the latter.",
     hero: "gold",
+    coverUrl: "/news/final-recap.jpg",
     body: [
-      "Gujarat Titans posted 155 for 8. Royal Challengers Bengaluru reached 161 for 5 in 18 overs. The margin was five wickets and 12 balls; the story was Virat Kohli’s 75 not out off 42.",
-      "Kagiso Rabada removed Devdutt Padikkal for one — the wicket that sealed the Purple Cap on 29. It was not enough. Kohli’s fifty came off 25 balls, the fastest of his IPL career, and he hit the winning run.",
-      "RCB had already beaten GT in Qualifier 1. Returning to the same matchup in the final, they finished the job and joined CSK and MI as title-retainers. Season 20 now opens with a champion that no longer has anything to prove — and everything to defend.",
+      "There are nights that belong to the record books, and then there are nights etched straight into cricketing folklore. The IPL 2026 Final at the Narendra Modi Stadium in Ahmedabad belonged firmly to the latter.",
+      "Under the blinding floodlights of the world’s largest cricket stadium, Royal Challengers Bengaluru defended their crown, overpowering Gujarat Titans by five wickets.",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "There are nights that belong to the record books, and then there are nights etched straight into cricketing folklore. The IPL 2026 Final at the Narendra Modi Stadium in Ahmedabad belonged firmly to the latter. Under the blinding floodlights of the world’s largest cricket stadium, Royal Challengers Bengaluru defended their crown, overpowering Gujarat Titans by five wickets.",
+      },
+      {
+        type: "p",
+        text: "At the center of it all was Virat Kohli. In a tournament defined by young guns and frantic powerplays, the 37-year-old maestro authored a definitive chase clinic: an unbeaten 75 off just 42 deliveries that sealed back-to-back championships and solidified RCB's status as a modern T20 dynasty.",
+      },
+      { type: "h2", text: "Setting the Stage: The Bowlers Strangle Gujarat" },
+      {
+        type: "p",
+        text: "Rajat Patidar’s decision to insert Gujarat Titans after winning the toss proved decisive early on. While Ahmedabad pitches can often transform into batting paradises, RCB’s disciplined bowling attack gave GT's explosive top order no breathing room.",
+      },
+      {
+        type: "ul",
+        items: [
+          "The Powerplay Lockdown: Bhuvneshwar Kumar and Josh Hazlewood operated with textbook Test-match discipline. Bhuvneshwar struck first to remove Sai Sudharsan, while Hazlewood dismissed Titans skipper Shubman Gill, crippling Gujarat's primary run-scorers inside the opening five overs.",
+          "Middle-Overs Choke: Rasikh Salam Dar emerged as the wrecker-in-chief in the middle phase. His seam variations and cutters yielded superb figures of 3 for 27. When Krunal Pandya lured Jos Buttler into a stumping, GT was gasping at 99 for 5.",
+          "Sundar’s Lone Stand: Only a gritty, counter-attacking 50 not out off 37 balls from Washington Sundar allowed Gujarat to drag their total to a respectable 155 for 8 in their 20 overs.",
+        ],
+      },
+      {
+        type: "p",
+        text: "It was a competitive total on a sticky surface, but it needed Gujarat's bowling attack to deliver early breakthroughs.",
+      },
+      { type: "h2", text: "Match Summary: The Final at a Glance" },
+      {
+        type: "table",
+        caption: "IPL 2026 Final — Narendra Modi Stadium, Ahmedabad",
+        headers: ["Team / Phase", "Score / Key Figures", "Key Performers"],
+        rows: [
+          [
+            "Gujarat Titans",
+            "155/8 in 20.0 overs",
+            "Washington Sundar 50* (37), Rasikh Salam 3/27, Bhuvneshwar Kumar 2/29",
+          ],
+          [
+            "RCB (Chase)",
+            "161/5 in 18.0 overs",
+            "Virat Kohli 75* (42), Venkatesh Iyer 32 (16), Rashid Khan 2/25",
+          ],
+          [
+            "Result",
+            "RCB won by 5 wickets with 12 balls to spare",
+            "Player of the Match: Virat Kohli",
+          ],
+        ],
+      },
+      { type: "h2", text: "The Chase: Kohli and Iyer Blitz the Powerplay" },
+      {
+        type: "p",
+        text: "If Gujarat held any hopes of choking the chase through spin, RCB blew those plans apart within the first twenty minutes.",
+      },
+      {
+        type: "p",
+        text: "Venkatesh Iyer partnered with Kohli to launch an uninhibited blitzkrieg from ball one. Iyer's fearless 32 off just 16 balls punished Kagiso Rabada and Mohammed Siraj, setting up a 62-run opening stand in only 4.3 overs.",
+      },
+      {
+        type: "p",
+        text: "When Iyer fell, Kohli took complete command. Playing with an evolved mindset tailored to high-tempo cricket, Kohli reached his half-century off just 25 balls—the fastest fifty of his entire IPL career. He dismantled the Titans' bowling changes, depositing Siraj over wide long-on and pulling hard through mid-wicket with pristine authority.",
+      },
+      { type: "h2", text: "Weathering the Mid-Innings Turbulence" },
+      {
+        type: "p",
+        text: "Chases in championship finals rarely conclude without drama. Gujarat briefly clawed their way back into contention through their premier match-winner, Rashid Khan.",
+      },
+      {
+        type: "p",
+        text: "Rashid broke through RCB's middle order, picking up Rajat Patidar and trapping Jitesh Sharma in rapid succession.",
+      },
+      {
+        type: "p",
+        text: "A flurry of quick dismissals saw RCB stumble from 104/1 to 132/5, setting off anxious ripples among the traveling red-and-gold supporters.",
+      },
+      {
+        type: "p",
+        text: "Yet, while chaos unfolded around him, Kohli remained ice-cold. He refused to let Rashid dictate terms, calmly picking singles against the Afghan leg-spinner before picking off boundary balls against the support pacers. Partnered by Tim David (24* off 17), Kohli ensured Gujarat’s window of opportunity slammed shut immediately.",
+      },
+      { type: "h2", text: "The Crowning Moment" },
+      {
+        type: "p",
+        text: "Fittingly, the winning moment belonged entirely to RCB’s talisman. With just a handful of runs needed in the 18th over, Kohli stepped across to an overpitched delivery from Arshad Khan, lifting it cleanly into the Ahmedabad night sky over mid-wicket for a massive six.",
+      },
+      {
+        type: "p",
+        text: "The roar inside Narendra Modi Stadium shook the concrete as Kohli pumped his fists, leaped into the air, and embraced Tim David. Finishing unbeaten on 75 with nine boundaries and three towering sixes, he walked off as the undisputed Player of the Match.",
+      },
+      { type: "h2", text: "A Chapter of Immortality" },
+      {
+        type: "p",
+        text: "This triumph carries monumental historic weight. By retaining the crown they first lifted in 2025, RCB joined Chennai Super Kings (2010–2011) and Mumbai Indians (2019–2020) as only the third team in IPL history to defend a title.",
+      },
+      {
+        type: "p",
+        text: "For years, critics questioned whether Kohli’s classical batsmanship could continually thrive as franchise cricket embraced frantic strike rates. In Ahmedabad, he gave his definitive answer: combining tactical game management with an unyielding strike rate of nearly 180 to anchor an IPL final chase. It was a vintage batting clinic that sealed Bengaluru's golden era in unforgettable fashion.",
+      },
     ],
   },
   {
