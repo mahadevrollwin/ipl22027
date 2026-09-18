@@ -66,14 +66,14 @@ export function PageHero({
 }: {
   kicker: string;
   title: string;
-  lede: string;
+  lede?: string;
 }) {
   return (
     <section className="bg-ipl ipl-rays">
       <div className="mx-auto w-[min(1180px,calc(100%-40px))] py-10">
         <Kicker className="text-gold">{kicker}</Kicker>
         <h1 className="text-[clamp(36px,6vw,56px)] leading-[1.05] font-extrabold text-white">{title}</h1>
-        <p className="mt-3 max-w-[52ch] text-[17px] text-white/80">{lede}</p>
+        {lede ? <p className="mt-3 max-w-[52ch] text-[17px] text-white/80">{lede}</p> : null}
       </div>
     </section>
   );

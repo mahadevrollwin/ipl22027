@@ -52,10 +52,10 @@ export function TeamCard({ team, index = 0 }: { team: Team; index?: number }) {
             {team.summary || team.blurb}
           </p>
 
-          <div className="mt-6 flex border-t border-line pt-4">
+          <div className="mt-auto flex border-t border-line pt-4">
             <Link
               href={`/teams/${team.id}`}
-              className="inline-flex min-h-10 items-center justify-center rounded-full bg-ipl px-4 text-sm font-bold text-white transition hover:bg-navy group-hover:translate-x-0"
+              className="inline-flex min-h-10 items-center justify-center rounded-full bg-ipl px-4 text-sm font-bold text-white transition hover:bg-navy"
             >
               View Team →
             </Link>

@@ -16,19 +16,13 @@ export default async function TeamsPage() {
 
   return (
     <>
-      <PageHero kicker={page.kicker} title={page.title} lede={page.lede} />
+      <PageHero kicker={page.kicker} title={page.title} />
       <section className="py-10 sm:py-14 lg:py-16">
         <Wrap>
-          <div className="mb-8 flex flex-col gap-2 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-xs font-bold tracking-[0.18em] text-ipl uppercase">Season 20 franchises</p>
-              <h2 className="mt-2 text-[28px] leading-none font-extrabold text-navy sm:text-[32px]">
-                All 10 IPL teams
-              </h2>
-            </div>
-            <p className="max-w-[42ch] text-sm text-muted sm:text-right">
-              Logos, squads and 2026 records — open any card for the full franchise page.
-            </p>
+          <div className="mb-8 sm:mb-10">
+            <h2 className="text-[28px] leading-none font-extrabold text-navy sm:text-[32px]">
+              All 10 IPL teams
+            </h2>
           </div>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
             {sorted.map((team, index) => (
