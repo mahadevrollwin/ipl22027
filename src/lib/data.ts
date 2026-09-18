@@ -445,21 +445,6 @@ export const NEWS: Article[] = [
     ],
   },
   {
-    id: "impact-player",
-    tag: "Rules",
-    date: "16 Sep 2026",
-    kind: "news",
-    title: "Impact Player rule back on the Governing Council table",
-    excerpt:
-      "Franchises are being asked for fresh feedback on the substitute rule that has shaped tactics since 2023.",
-    hero: "teal",
-    body: [
-      "Alongside the auction-venue discussion, the BCCI has asked franchises and other stakeholders for updated views on the Impact Player rule. The substitute has defined strategy since 2023, letting sides bowl with five specialists and still bat deep.",
-      "No final call has been announced. Another Governing Council sitting is expected in the coming weeks. If the rule stays, auction lists will keep privileging specialist quicks and finishers; if it is tweaked or dropped, squad construction for 2027 changes overnight.",
-      "We will update this page the moment an official playing-condition note is released. Until then, treat every ‘confirmed XI’ graphic you see on social media as speculation.",
-    ],
-  },
-  {
     id: "sooryavanshi",
     tag: "Players",
     date: "01 Jun 2026",
@@ -688,50 +673,6 @@ export const NEWS: Article[] = [
         type: "p",
         text: "For years, critics questioned whether Kohli’s classical batsmanship could continually thrive as franchise cricket embraced frantic strike rates. In Ahmedabad, he gave his definitive answer: combining tactical game management with an unyielding strike rate of nearly 180 to anchor an IPL final chase. It was a vintage batting clinic that sealed Bengaluru's golden era in unforgettable fashion.",
       },
-    ],
-  },
-  {
-    id: "auction-watch",
-    tag: "Preview",
-    date: "10 Sep 2026",
-    kind: "blog",
-    title: "Auction watch: who needs what before Season 20",
-    excerpt:
-      "MI and LSG won four games each. CSK missed the four. The mini-auction is not cosmetic for half the table.",
-    hero: "blue",
-    body: [
-      "A mini-auction is usually about finishing pieces. Not this year for everyone. Mumbai Indians and Lucknow Super Giants each won four of 14 league matches. Chennai Super Kings finished eighth. Kolkata, Delhi and Punjab were in the mix and still went home.",
-      "The sides with less work are RCB, GT, SRH and RR — all playoff teams with identifiable cores. Even they will chase a death bowler or a finisher if the Impact Player conversation changes the value of specialists.",
-      "Purse remaining and the released-player list will tell the real story. Until those drop, the sensible read is: four teams polishing, six teams rebuilding, and one December night that can redraw the 2027 table before a ball is bowled.",
-    ],
-  },
-  {
-    id: "season-20",
-    tag: "Season 20",
-    date: "08 Sep 2026",
-    kind: "blog",
-    title: "Season 20: format, window, and what we know so far",
-    excerpt:
-      "Ten teams, a league of 70 games, four playoff nights. The 2027 fixture list is still unreleased.",
-    hero: "ember",
-    body: [
-      "IPL 2027 will be the 20th edition of the league. The playing group remains the ten current franchises. The standard shape is a double round-robin of 70 league matches, then Qualifier 1, Eliminator, Qualifier 2 and the final.",
-      "The 2026 season ran from 28 March to 31 May. A similar late-March start is the working assumption for 2027 until BCCI publishes the almanac. Evening games typically begin at 7:30 pm IST; double-headers add a 3:30 pm IST afternoon slot.",
-      "Broadcast in India has been Star Sports on television and JioHotstar for streaming. Confirm 2027 rights closer to the first ball. This companion will add the full fixture grid, venues and start times the day they are official.",
-    ],
-  },
-  {
-    id: "purple-cap",
-    tag: "Bowling",
-    date: "31 May 2026",
-    kind: "news",
-    title: "Rabada’s 29: how the Purple Cap was won",
-    excerpt: "One wicket in the final — Padikkal, for one — and Kagiso Rabada closed the race at 29.",
-    hero: "violet",
-    body: [
-      "Kagiso Rabada finished IPL 2026 with 29 wickets, one ahead of Royal Challengers Bengaluru’s Bhuvneshwar Kumar (28) and four ahead of Rajasthan’s Jofra Archer (25).",
-      "The cap was still live on final night. Rabada’s dismissal of Devdutt Padikkal for one ended the argument. It was a bowler’s season in a batter’s league: 835 wickets fell across the tournament, against 2,332 fours and 1,426 sixes.",
-      "GT take a purple-capped attack into the off-season. Whether they can add a title to the individual medal is the question Ahmedabad will live with until May.",
     ],
   },
 ];

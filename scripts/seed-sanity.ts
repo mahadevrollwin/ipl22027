@@ -177,7 +177,7 @@ async function main() {
       publishedAt: parseDisplayDate(article.date),
       excerpt: article.excerpt,
       hero: article.hero,
-      featured: ["auction-india", "three-peat", "impact-player", "sooryavanshi"].includes(article.id),
+      featured: ["auction-india", "three-peat", "sooryavanshi"].includes(article.id),
       body: blocksFromParagraphs(article.body, article.id),
     });
   }

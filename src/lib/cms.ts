@@ -237,19 +237,21 @@ export async function getPage(slug: string): Promise<PageContent> {
 
 export async function getArticles(): Promise<Article[]> {
   const docs = await fetchSanity<SanityArticle[]>(articlesQuery);
-  if (!docs?.length) return NEWS;
-  return docs.map((doc) => {
-    const mapped = mapArticle(doc);
-    const staticArticle = getStaticArticle(mapped.id);
-    if (!staticArticle?.blocks?.length && !staticArticle?.coverUrl) return mapped;
-    return {
-      ...mapped,
-      coverUrl: staticArticle.coverUrl || mapped.coverUrl,
-      blocks: staticArticle.blocks?.length ? staticArticle.blocks : mapped.blocks,
-      body: staticArticle.blocks?.length ? staticArticle.body : mapped.body,
-      excerpt: staticArticle.blocks?.length ? staticArticle.excerpt : mapped.excerpt,
-    };
-  });
+  const articles = !docs?.length
+    ? NEWS
+    : docs.map((doc) => {
+        const mapped = mapArticle(doc);
+        const staticArticle = getStaticArticle(mapped.id);
+        if (!staticArticle?.blocks?.length && !staticArticle?.coverUrl) return mapped;
+        return {
+          ...mapped,
+          coverUrl: staticArticle.coverUrl || mapped.coverUrl,
+          blocks: staticArticle.blocks?.length ? staticArticle.blocks : mapped.blocks,
+          body: staticArticle.blocks?.length ? staticArticle.body : mapped.body,
+          excerpt: staticArticle.blocks?.length ? staticArticle.excerpt : mapped.excerpt,
+        };
+      });
+  return articles.filter((article) => Boolean(article.coverUrl));
 }
 
 export async function getBlogs(): Promise<Article[]> {
@@ -260,18 +262,25 @@ export async function getBlogs(): Promise<Article[]> {
 export async function getArticleBySlug(id: string): Promise<Article | undefined> {
   const staticArticle = getStaticArticle(id);
   const doc = await fetchSanity<SanityArticle>(articleBySlugQuery, { slug: id });
+  let article: Article | undefined;
   if (doc?.id) {
     const mapped = mapArticle(doc);
-    if (!staticArticle?.blocks?.length && !staticArticle?.coverUrl) return mapped;
-    return {
-      ...mapped,
-      coverUrl: staticArticle?.coverUrl || mapped.coverUrl,
-      blocks: staticArticle?.blocks?.length ? staticArticle.blocks : mapped.blocks,
-      body: staticArticle?.blocks?.length ? staticArticle.body : mapped.body,
-      excerpt: staticArticle?.blocks?.length ? staticArticle.excerpt : mapped.excerpt,
-    };
+    if (!staticArticle?.blocks?.length && !staticArticle?.coverUrl) {
+      article = mapped;
+    } else {
+      article = {
+        ...mapped,
+        coverUrl: staticArticle?.coverUrl || mapped.coverUrl,
+        blocks: staticArticle?.blocks?.length ? staticArticle.blocks : mapped.blocks,
+        body: staticArticle?.blocks?.length ? staticArticle.body : mapped.body,
+        excerpt: staticArticle?.blocks?.length ? staticArticle.excerpt : mapped.excerpt,
+      };
+    }
+  } else {
+    article = staticArticle;
   }
-  return staticArticle;
+  if (!article?.coverUrl) return undefined;
+  return article;
 }
 
 export async function getVideos() {
