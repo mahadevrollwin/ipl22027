@@ -255,8 +255,7 @@ export async function getArticles(): Promise<Article[]> {
 }
 
 export async function getBlogs(): Promise<Article[]> {
-  const articles = await getArticles();
-  return articles.filter((article) => article.kind === "blog");
+  return getArticles();
 }
 
 export async function getArticleBySlug(id: string): Promise<Article | undefined> {
