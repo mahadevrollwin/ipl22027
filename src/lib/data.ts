@@ -353,12 +353,95 @@ export const NEWS: Article[] = [
     kind: "blog",
     title: "Can RCB make it three in a row in Season 20?",
     excerpt:
-      "Only CSK and MI have retained the trophy before. Bengaluru join that club — and now chase a three-peat.",
+      "For seventeen agonizing years, Royal Challengers Bengaluru was cricket’s most tragic romantic narrative. Then came back-to-back titles — and Season 20’s chase for immortality.",
     hero: "red",
+    coverUrl: "/news/three-peat.jpg",
     body: [
-      "Royal Challengers Bengaluru beat Gujarat Titans by five wickets in the IPL 2026 final at Narendra Modi Stadium, chasing 156 with 12 balls to spare. Virat Kohli’s unbeaten 75 off 42, including the fastest fifty of his IPL career, won player of the match.",
-      "That made RCB only the third franchise after Chennai Super Kings and Mumbai Indians to defend the title. They finished the league on 18 points, tied with GT and SRH, and first on net run rate.",
-      "Season 20 is a different exam. Mini-auctions punish complacency, and GT, SRH and Rajasthan all have cores that already lived in the 2026 playoffs. The question around Chinnaswamy is not whether RCB belong — it is whether the dressing room still has another May in it.",
+      "For seventeen agonizing years, Royal Challengers Bengaluru was cricket’s most tragic romantic narrative. They possessed the biggest names, the loudest fanbase, the most electric stadium atmosphere, and an empty trophy cabinet.",
+      "Then came the breakthrough of 2025, followed by an emphatic coronation on May 31, 2026, when Virat Kohli guided RCB to a five-wicket victory over Gujarat Titans to secure back-to-back Indian Premier League championships.",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "For seventeen agonizing years, Royal Challengers Bengaluru was cricket’s most tragic romantic narrative. They possessed the biggest names, the loudest fanbase, the most electric stadium atmosphere, and an empty trophy cabinet. Then came the breakthrough of 2025, followed by an emphatic coronation on May 31, 2026, when Virat Kohli guided RCB to a five-wicket victory over Gujarat Titans to secure back-to-back Indian Premier League championships.",
+      },
+      {
+        type: "p",
+        text: "Suddenly, the narrative has inverted entirely. Bengaluru is no longer chasing validation; they are chasing immortality. As the league gears up for its milestone Season 20 in 2027, the burning question dominating franchise cricket is simple yet monumental: can RCB achieve the holy grail and make it three IPL titles in a row?",
+      },
+      { type: "h2", text: "The Final Frontier: Escaping the Two-Title Trap" },
+      {
+        type: "p",
+        text: "In the history of the IPL, establishing a dynasty is brutally difficult. Going back-to-back has only ever been achieved three times: Chennai Super Kings (2010–2011), Mumbai Indians (2019–2020), and now Royal Challengers Bengaluru (2025–2026).",
+      },
+      {
+        type: "p",
+        text: "Yet no franchise has ever crossed the threshold to win three successive titles.",
+      },
+      {
+        type: "table",
+        caption: "The Three-Peat Chase",
+        headers: ["Franchise", "Back-to-Back Years", 'The "Three-Peat" Attempt Year', "What Happened?"],
+        rows: [
+          ["Chennai Super Kings", "2010, 2011", "2012 (Season 5)", "Reached Final; lost a thriller to KKR"],
+          ["Mumbai Indians", "2019, 2020", "2021 (Season 14)", "Finished 5th; missed playoffs on NRR"],
+          ["Royal Challengers Bengaluru", "2025, 2026", "2027 (Season 20)", "In Pursuit"],
+        ],
+      },
+      {
+        type: "p",
+        text: "The mechanics of the IPL are engineered for competitive parity. Between retention limits, tactical adaptations by opposing analysts, and the sheer volatility of T20 knockout cricket, defending a crown once is rare; defending it twice borders on the impossible.",
+      },
+      { type: "h2", text: "The Engine Behind the Red & Gold Empire" },
+      {
+        type: "p",
+        text: "RCB’s transformation into a ruthless winning machine wasn't accidental. It stemmed from shedding their historic over-reliance on individual top-order fireworks and constructing an adaptable, ice-veined unit.",
+      },
+      {
+        type: "ul",
+        items: [
+          "The Ageless Talisman: Virat Kohli remains the spiritual and tactical heartbeat of the lineup. His match-winning 75 in the 2026 final demonstrated an evolved T20 blueprint—anchoring when required while tearing away through the middle overs with unmatched intent.",
+          "Middle-Order Insurance: In previous eras, an early wicket triggered an inevitable RCB collapse. Over 2025 and 2026, Rajat Patidar, Tim David, Krunal Pandya, and Jitesh Sharma provided a bulletproof spine capable of hauling targets down from improbable deficits or launching late assaults beyond the 200-run mark.",
+          "Bowling Discipline at M. Chinnaswamy: The most critical shift has been with the ball. Where Bengaluru once bled boundaries at home, the disciplined hit-the-deck precision of Josh Hazlewood combined with the veteran swing craft of Bhuvneshwar Kumar and the wicket-taking bursts of Rasikh Salam turned their bowling attack into one of the league's stingiest.",
+        ],
+      },
+      { type: "h2", text: "The Hurdles Between RCB and Cricket Immortality" },
+      {
+        type: "p",
+        text: "Completing a hat-trick of titles in Season 20 will test RCB's resilience like never before.",
+      },
+      { type: "h3", text: "1. The Giant Bullseye" },
+      {
+        type: "p",
+        text: "Every franchise measures its tactical progress against the reigning double champions. By Season 20, opposition video analysts will have dissected every release point of Hazlewood’s slower balls and mapped out every boundary zone against Patidar's spin assault. RCB will rarely face a complacent opponent; every side treats a fixture against them as their personal final.",
+      },
+      { type: "h3", text: "2. Squad Fatigue and Age Curves" },
+      {
+        type: "p",
+        text: "Key pillars of RCB’s successive triumphs—including Kohli, Bhuvneshwar, and Hazlewood—are in the veteran stages of their careers. Sustaining peak physical conditioning, injury-free spells, and relentless intensity across a grueling two-month campaign becomes significantly steeper with each passing year. How RCB manages squad rotation in the mini-auction will make or break their campaign.",
+      },
+      { type: "h3", text: "3. Playoff Roulette" },
+      {
+        type: "p",
+        text: "The IPL playoff format is inherently high-stakes. Even the most dominant regular-season team can be eliminated by one bad 15-minute passage of play, an extraordinary individual counter-attack, or an unfavorable toss under heavy dew.",
+      },
+      { type: "h2", text: "The Blueprint: What It Will Take to Win Season 20" },
+      {
+        type: "p",
+        text: "If RCB is to lift the trophy again in Season 20, their strategy must prioritize proactive evolution over comfortable complacency:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Surgical Mini-Auction Acquisitions: Rather than altering the core, RCB must recruit high-pace dynamic backup seamers and a flexible left-hand hitting prospect to prevent predictable matchups.",
+          "Empowering the New Guard: Relying on Kohli’s heroics cannot be Plan A in every high-pressure chase. Season 20 requires the middle order to take unconditional ownership during the league phases.",
+          "Sustaining Fielding Standards: The hidden differentiator in RCB’s 2025 and 2026 campaigns was boundary-riding athleticism and ground fielding efficiency—saving 10–15 runs every game that routinely tipped tight finishes in their favor.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The romantic desperation that shadowed Royal Challengers Bengaluru for nearly two decades is gone, replaced by the swagger of back-to-back champions. But the step from great to immortal is the steepest climb in sport. If Andy Flower, the coaching staff, and the playing eleven can weather the inevitable target on their backs, Season 20 could etch this RCB side as the greatest franchise dynasty cricket has ever seen.",
+      },
     ],
   },
   {
