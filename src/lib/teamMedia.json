@@ -1,0 +1,1077 @@
+{
+  "csk": {
+    "logo": "/teams/logos/csk.png",
+    "banner": "/teams/banners/csk.jpg",
+    "trophyYears": [
+      "2010",
+      "2011",
+      "2018",
+      "2021",
+      "2023"
+    ],
+    "about": [
+      "Chennai Super Kings (CSK) is one of the most iconic and successful teams in the history of the Indian Premier League. Founded in 2008, the franchise quickly built a reputation for consistency, discipline, and remarkable match finishing ability.",
+      "The biggest strength of CSK has been its team stability and strong leadership philosophy. The legendary captaincy of MS Dhoni transformed the franchise into a cricketing powerhouse.",
+      "CSK is also known for backing experienced players rather than relying solely on young talent. Many cricket legends have played important roles in the franchise's success.",
+      "The home ground of CSK, the M.A. Chidambaram Stadium, often turns into a fortress when the Yellow Army plays there. The roaring crowd support gives the team a massive psychological advantage.",
+      "Over the years, CSK has built a legacy of resilience and championship mentality. Their ability to perform in knockout situations makes them one of the greatest IPL franchises ever."
+    ],
+    "summary": "Chennai Super Kings (CSK) is one of the most successful and popular franchises in the Indian Premier League (IPL). The team represents the city of Chennai and plays its home matches at the historic MA Chidambaram Stadium, often called Chepauk by fans.",
+    "players": [
+      {
+        "name": "MS Dhoni",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/csk/ms-dhoni.avif"
+      },
+      {
+        "name": "Ruturaj Gaikwad",
+        "role": "Batter | Captain",
+        "image": "/teams/players/csk/ruturaj-gaikwad.avif"
+      },
+      {
+        "name": "Dewald Brevis",
+        "role": "Batter",
+        "image": "/teams/players/csk/dewald-brevis.avif"
+      },
+      {
+        "name": "Sanju Samson",
+        "role": "Batter",
+        "image": "/teams/players/csk/sanju-samson.avif"
+      },
+      {
+        "name": "Ayush Mhatre",
+        "role": "Batter",
+        "image": "/teams/players/csk/ayush-mhatre.avif"
+      },
+      {
+        "name": "Urvil Patel",
+        "role": "Batter",
+        "image": "/teams/players/csk/urvil-patel.avif"
+      },
+      {
+        "name": "Kartik Sharma",
+        "role": "Batter",
+        "image": "/teams/players/csk/kartik-sharma.avif"
+      },
+      {
+        "name": "Sarfaraz Khan",
+        "role": "Batter",
+        "image": "/teams/players/csk/sarfaraz-khan.avif"
+      },
+      {
+        "name": "Anshul Kamboj",
+        "role": "All-Rounder",
+        "image": "/teams/players/csk/anshul-kamboj.avif"
+      },
+      {
+        "name": "Ramakrishna Ghosh",
+        "role": "All-Rounder",
+        "image": "/teams/players/csk/ramakrishna-ghosh.avif"
+      },
+      {
+        "name": "Jamie Overton",
+        "role": "All-Rounder",
+        "image": "/teams/players/csk/jamie-overton.avif"
+      },
+      {
+        "name": "Shivam Dube",
+        "role": "All-Rounder",
+        "image": "/teams/players/csk/shivam-dube.avif"
+      },
+      {
+        "name": "Prashant Veer",
+        "role": "All-Rounder",
+        "image": "/teams/players/csk/prashant-veer.avif"
+      },
+      {
+        "name": "Zak Foulkes",
+        "role": "All-Rounder",
+        "image": "/teams/players/csk/zak-foulkes.avif"
+      },
+      {
+        "name": "Aman Khan",
+        "role": "All-Rounder",
+        "image": "/teams/players/csk/aman-khan.avif"
+      },
+      {
+        "name": "Khaleel Ahmed",
+        "role": "Bowler",
+        "image": "/teams/players/csk/khaleel-ahmed.avif"
+      },
+      {
+        "name": "Noor Ahmad",
+        "role": "Bowler",
+        "image": "/teams/players/csk/noor-ahmad.avif"
+      },
+      {
+        "name": "Mukesh Choudhary",
+        "role": "Bowler",
+        "image": "/teams/players/csk/mukesh-choudhary.avif"
+      },
+      {
+        "name": "Nathan Ellis",
+        "role": "Bowler",
+        "image": "/teams/players/csk/nathan-ellis.avif"
+      },
+      {
+        "name": "Shreyas Gopal",
+        "role": "Bowler",
+        "image": "/teams/players/csk/shreyas-gopal.avif"
+      },
+      {
+        "name": "Gurjapneet Singh",
+        "role": "Bowler",
+        "image": "/teams/players/csk/gurjapneet-singh.avif"
+      },
+      {
+        "name": "Akeal Hosein",
+        "role": "Bowler",
+        "image": "/teams/players/csk/akeal-hosein.avif"
+      },
+      {
+        "name": "Matt Henry",
+        "role": "Bowler",
+        "image": "/teams/players/csk/matt-henry.avif"
+      },
+      {
+        "name": "Rahul Chahar",
+        "role": "Bowler",
+        "image": "/teams/players/csk/rahul-chahar.avif"
+      }
+    ]
+  },
+  "dc": {
+    "logo": "/teams/logos/dc.png",
+    "banner": "/teams/banners/dc.jpg",
+    "trophyYears": [],
+    "about": [
+      "Delhi Capitals (DC) is a professional cricket franchise that participates in the Indian Premier League. The team represents Delhi and plays its home matches at the Arun Jaitley Stadium, where local fans strongly support the team during IPL seasons.",
+      "The franchise was originally founded in 2008 as Delhi Daredevils. In 2019, the team was rebranded as Delhi Capitals to mark a new beginning and build a stronger cricketing identity. The ownership of the franchise is shared by the GMR Group and the JSW Group.",
+      "Delhi Capitals is widely recognized for focusing on young talent and aggressive cricket strategies. One of the most influential modern players associated with the team is Rishabh Pant, who served as captain and played several match-winning innings for the franchise. Other important players who have represented DC include Shreyas Iyer, David Warner, and Kagiso Rabada.",
+      "The team’s best performance came in the 2020 IPL season, when Delhi Capitals reached the tournament final for the first time in franchise history. Although they lost the final to Mumbai Indians, the season marked a major improvement in the team’s overall performance and consistency.",
+      "Delhi Capitals is known for developing promising Indian players and maintaining a fearless playing style. The franchise combines young Indian talent with experienced international stars to create a competitive squad. The team’s fan base continues to grow, especially among cricket lovers in northern India."
+    ],
+    "summary": "Delhi Capitals (DC) is a professional cricket franchise that competes in the Indian Premier League (IPL). The team represents Delhi and plays its home matches at the Arun Jaitley Stadium. Known for nurturing young talent and playing aggressive cricket, Delhi Capitals has become one of the most exciting teams in the league.",
+    "players": [
+      {
+        "name": "KL Rahul",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/dc/kl-rahul.avif"
+      },
+      {
+        "name": "Karun Nair",
+        "role": "Batter",
+        "image": "/teams/players/dc/karun-nair.avif"
+      },
+      {
+        "name": "Prithvi Shaw",
+        "role": "Batter",
+        "image": "/teams/players/dc/prithvi-shaw.avif"
+      },
+      {
+        "name": "David Miller",
+        "role": "Batter",
+        "image": "/teams/players/dc/david-miller.avif"
+      },
+      {
+        "name": "Ben Duckett",
+        "role": "Batter",
+        "image": "/teams/players/dc/ben-duckett.avif"
+      },
+      {
+        "name": "Tristan Stubbs",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/dc/tristan-stubbs.avif"
+      },
+      {
+        "name": "Pathum Nissanka",
+        "role": "Batter",
+        "image": "/teams/players/dc/pathum-nissanka.avif"
+      },
+      {
+        "name": "Abhishek Porel",
+        "role": "Batter",
+        "image": "/teams/players/dc/abhishek-porel.avif"
+      },
+      {
+        "name": "Axar Patel",
+        "role": "All-Rounder | Captain",
+        "image": "/teams/players/dc/axar-patel.avif"
+      },
+      {
+        "name": "Sameer Rizvi",
+        "role": "All-Rounder",
+        "image": "/teams/players/dc/sameer-rizvi.avif"
+      },
+      {
+        "name": "Ashutosh Sharma",
+        "role": "All-Rounder",
+        "image": "/teams/players/dc/ashutosh-sharma.avif"
+      },
+      {
+        "name": "Vipraj Nigam",
+        "role": "All-Rounder",
+        "image": "/teams/players/dc/vipraj-nigam.avif"
+      },
+      {
+        "name": "Nitish Rana",
+        "role": "All-Rounder",
+        "image": ""
+      },
+      {
+        "name": "Ajay Mandal",
+        "role": "All-Rounder",
+        "image": "/teams/players/dc/ajay-mandal.avif"
+      },
+      {
+        "name": "Tripurana Vijay",
+        "role": "All-Rounder",
+        "image": "/teams/players/dc/tripurana-vijay.avif"
+      },
+      {
+        "name": "Mitchell Starc",
+        "role": "Bowler",
+        "image": "/teams/players/dc/mitchell-starc.avif"
+      },
+      {
+        "name": "Kuldeep Yadav",
+        "role": "Bowler",
+        "image": "/teams/players/dc/kuldeep-yadav.avif"
+      },
+      {
+        "name": "Mukesh Kumar",
+        "role": "Bowler",
+        "image": "/teams/players/dc/mukesh-kumar.avif"
+      },
+      {
+        "name": "Lungi Ngidi",
+        "role": "Bowler",
+        "image": "/teams/players/dc/lungi-ngidi.avif"
+      },
+      {
+        "name": "T. Natarajan",
+        "role": "Bowler",
+        "image": "/teams/players/dc/t-natarajan.avif"
+      },
+      {
+        "name": "Kyle Jamieson",
+        "role": "Bowler",
+        "image": "/teams/players/dc/kyle-jamieson.avif"
+      },
+      {
+        "name": "Dushmantha Chameera",
+        "role": "Bowler",
+        "image": "/teams/players/dc/dushmantha-chameera.avif"
+      }
+    ]
+  },
+  "gt": {
+    "logo": "/teams/logos/gt.png",
+    "banner": "/teams/banners/gt.jpg",
+    "trophyYears": [
+      "2022"
+    ],
+    "about": [
+      "Gujarat Titans (GT) is one of the newest and most successful franchises in the Indian Premier League. The team represents Ahmedabad and plays its home matches at the massive Narendra Modi Stadium, which is one of the largest cricket stadiums in the world.",
+      "The franchise was founded in 2022 as part of the IPL expansion, and it is owned by CVC Capital Partners. Despite being a new team, Gujarat Titans made an extraordinary impact in their debut season.",
+      "The biggest achievement of Gujarat Titans came in 2022, when the team won the IPL championship in its very first season under the captaincy of Hardik Pandya. This historic victory established GT as a strong contender in the tournament right from the beginning. The team also reached the 2023 IPL final, showing remarkable consistency in its early years.",
+      "Gujarat Titans are known for their balanced squad composition, excellent bowling attack, and smart match strategy. Key players who contributed to the team’s success include Shubman Gill, Rashid Khan, Mohammed Shami, and David Miller. Their performances helped the franchise become competitive in a very short time.",
+      "The team wears a distinctive navy-blue jersey and has quickly built a loyal fan base, especially in Gujarat. Gujarat Titans is widely admired for its disciplined gameplay, strong bowling unit, and fearless young cricketers."
+    ],
+    "summary": "Gujarat Titans (GT) is one of the newest franchises in the Indian Premier League (IPL). The team represents the city of Ahmedabad and plays its home matches at the massive Narendra Modi Stadium, which is the largest cricket stadium in the world.",
+    "players": [
+      {
+        "name": "Shubman Gill",
+        "role": "Batter",
+        "image": ""
+      },
+      {
+        "name": "Jos Buttler",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/gt/jos-buttler.avif"
+      },
+      {
+        "name": "Anuj Rawat",
+        "role": "Batter",
+        "image": "/teams/players/gt/anuj-rawat.avif"
+      },
+      {
+        "name": "Tom Banton",
+        "role": "Batter",
+        "image": "/teams/players/gt/tom-banton.avif"
+      },
+      {
+        "name": "Glenn Phillips",
+        "role": "Batter",
+        "image": "/teams/players/gt/glenn-phillips.avif"
+      },
+      {
+        "name": "Washington Sunder",
+        "role": "All-Rounder",
+        "image": "/teams/players/gt/washington-sunder.avif"
+      },
+      {
+        "name": "Nishant Sindhu",
+        "role": "All-Rounder",
+        "image": "/teams/players/gt/nishant-sindhu.avif"
+      },
+      {
+        "name": "Sai Kishore",
+        "role": "All-Rounder",
+        "image": "/teams/players/gt/sai-kishore.avif"
+      },
+      {
+        "name": "Sai Sudharsan",
+        "role": "All-Rounder",
+        "image": "/teams/players/gt/sai-sudharsan.avif"
+      },
+      {
+        "name": "Jayant Yadav",
+        "role": "All-Rounder",
+        "image": "/teams/players/gt/jayant-yadav.avif"
+      },
+      {
+        "name": "Jason Holder",
+        "role": "All-Rounder",
+        "image": "/teams/players/gt/jason-holder.avif"
+      },
+      {
+        "name": "Shahrukh Khan",
+        "role": "All-Rounder",
+        "image": "/teams/players/gt/shahrukh-khan.avif"
+      },
+      {
+        "name": "Kagiso Rabada",
+        "role": "Bowler",
+        "image": "/teams/players/gt/kagiso-rabada.avif"
+      },
+      {
+        "name": "Mohammed Siraj",
+        "role": "Bowler",
+        "image": "/teams/players/gt/mohammed-siraj.avif"
+      },
+      {
+        "name": "Prasidh Krishna",
+        "role": "Bowler",
+        "image": "/teams/players/gt/prasidh-krishna.avif"
+      },
+      {
+        "name": "Rashid Khan",
+        "role": "Bowler",
+        "image": "/teams/players/gt/rashid-khan.avif"
+      },
+      {
+        "name": "Rahul Tewatia",
+        "role": "Bowler",
+        "image": "/teams/players/gt/rahul-tewatia.avif"
+      },
+      {
+        "name": "Ishant Sharma",
+        "role": "Bowler",
+        "image": "/teams/players/gt/ishant-sharma.avif"
+      },
+      {
+        "name": "Manav Suthar",
+        "role": "Bowler",
+        "image": "/teams/players/gt/manav-suthar.avif"
+      }
+    ]
+  },
+  "kkr": {
+    "logo": "/teams/logos/kkr.png",
+    "banner": "/teams/banners/kkr.jpg",
+    "trophyYears": [
+      "2012",
+      "2014",
+      "2024"
+    ],
+    "about": [
+      "Kolkata Knight Riders (KKR) is one of the most popular franchises in the Indian Premier League. The team represents Kolkata and plays its home matches at the historic Eden Gardens, which is one of the largest and most passionate cricket venues in the world.",
+      "The franchise was founded in 2008 and is owned by Bollywood superstar Shah Rukh Khan, along with Juhi Chawla and businessman Jay Mehta. KKR quickly became one of the most widely followed IPL teams because of its strong brand value and entertainment factor.",
+      "Kolkata Knight Riders achieved major success under the captaincy of Gautam Gambhir, who led the team to two IPL titles in 2012 and 2014. These victories marked the golden period of the franchise and established KKR as a championship-winning side. The team has produced many memorable performances over the years in both batting and bowling departments.",
+      "KKR is known for featuring explosive international stars and powerful all-rounders such as Andre Russell, Sunil Narine, and Robin Uthappa, who played important roles in the team’s success. The franchise is particularly famous for its aggressive batting style and match-winning lower-order hitting.",
+      "The purple and gold jersey of KKR has become a symbol of pride for its fans, who are known for creating an electrifying atmosphere at Eden Gardens during home matches. The team continues to maintain a strong fan following across India."
+    ],
+    "summary": "Kolkata Knight Riders (KKR) is one of the most popular and successful franchises in the Indian Premier League (IPL). The team represents the city of Kolkata and plays its home matches at the historic Eden Gardens, which is known as one of the largest and most iconic cricket stadiums in the world.",
+    "players": [
+      {
+        "name": "Ajinkya Rahane",
+        "role": "Batter | Captain",
+        "image": "/teams/players/kkr/ajinkya-rahane.avif"
+      },
+      {
+        "name": "Rinku Singh",
+        "role": "Batter",
+        "image": "/teams/players/kkr/rinku-singh.avif"
+      },
+      {
+        "name": "A Raghuvanshi",
+        "role": "Batter",
+        "image": "/teams/players/kkr/a-raghuvanshi.avif"
+      },
+      {
+        "name": "Manish Pandey",
+        "role": "Batter",
+        "image": "/teams/players/kkr/manish-pandey.avif"
+      },
+      {
+        "name": "Cameron Green",
+        "role": "Batter",
+        "image": "/teams/players/kkr/cameron-green.avif"
+      },
+      {
+        "name": "Finn Allen",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/kkr/finn-allen.avif"
+      },
+      {
+        "name": "Rahul Tripathi",
+        "role": "Batter",
+        "image": "/teams/players/kkr/rahul-tripathi.avif"
+      },
+      {
+        "name": "Rovman Powell",
+        "role": "Batter",
+        "image": "/teams/players/kkr/rovman-powell.avif"
+      },
+      {
+        "name": "Anukul Roy",
+        "role": "All-Rounder",
+        "image": "/teams/players/kkr/anukul-roy.avif"
+      },
+      {
+        "name": "Ramandeep Singh",
+        "role": "All-Rounder",
+        "image": "/teams/players/kkr/ramandeep-singh.avif"
+      },
+      {
+        "name": "Rachin Ravindra",
+        "role": "All-Rounder",
+        "image": "/teams/players/kkr/rachin-ravindra.avif"
+      },
+      {
+        "name": "Daksa Kamra",
+        "role": "All-Rounder",
+        "image": "/teams/players/kkr/daksa-kamra.avif"
+      },
+      {
+        "name": "Harshit Rana",
+        "role": "Bowler",
+        "image": "/teams/players/kkr/harshit-rana.avif"
+      },
+      {
+        "name": "Sunil Narine",
+        "role": "Bowler",
+        "image": "/teams/players/kkr/sunil-narine.avif"
+      },
+      {
+        "name": "V Chakaravarthy",
+        "role": "Bowler",
+        "image": "/teams/players/kkr/v-chakaravarthy.avif"
+      },
+      {
+        "name": "Vaibhav Arora",
+        "role": "Bowler",
+        "image": "/teams/players/kkr/vaibhav-arora.avif"
+      },
+      {
+        "name": "M. Pathirana",
+        "role": "Bowler",
+        "image": "/teams/players/kkr/m-pathirana.avif"
+      },
+      {
+        "name": "Umran Malik",
+        "role": "Bowler",
+        "image": "/teams/players/kkr/umran-malik.avif"
+      },
+      {
+        "name": "Akash Deep",
+        "role": "Bowler",
+        "image": "/teams/players/kkr/akash-deep.avif"
+      }
+    ]
+  },
+  "lsg": {
+    "logo": "/teams/logos/lsg.png",
+    "banner": "/teams/banners/lsg.jpg",
+    "trophyYears": [],
+    "about": [
+      "Lucknow Super Giants (LSG) is one of the newest franchises in the Indian Premier League. The team represents Lucknow and plays its home matches at the modern Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, which is known for its large seating capacity and enthusiastic cricket fans.",
+      "The franchise was established in 2022 as part of the IPL expansion. It is owned by the RPSG Group, led by businessman Sanjiv Goenka. Despite being a new team, Lucknow Super Giants quickly became a strong competitor in the tournament.",
+      "LSG made an impressive debut in the 2022 IPL season, reaching the playoffs in their first year. The team was led by Rishabh Pant, who played a key role as captain and top-order batter. The franchise has also featured international stars such as Adien Markram and Nicholas Pooran.",
+      "Lucknow Super Giants has quickly built a growing fan base, especially in northern India, due to its competitive performances and modern team strategy. The franchise focuses on smart auction planning, developing young talent, and maintaining a balanced playing XI.",
+      "With promising early performances and a strong management structure, Lucknow Super Giants aims to become one of the future champions of the IPL and continue its rapid rise in Indian cricket. 🏏💙"
+    ],
+    "summary": "Lucknow Super Giants (LSG) is a professional cricket franchise that competes in the Indian Premier League (IPL). The team represents the city of Lucknow and plays its home matches at the Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, one of the largest cricket stadiums in India.",
+    "players": [
+      {
+        "name": "Rishabh Pant",
+        "role": "Wicket Keeper | Captain",
+        "image": "/teams/players/lsg/rishabh-pant.avif"
+      },
+      {
+        "name": "Aiden Markram",
+        "role": "Batter",
+        "image": "/teams/players/lsg/aiden-markram.avif"
+      },
+      {
+        "name": "Himmat Singh",
+        "role": "Batter",
+        "image": "/teams/players/lsg/himmat-singh.avif"
+      },
+      {
+        "name": "Matthew Breetzke",
+        "role": "Batter",
+        "image": "/teams/players/lsg/matthew-breetzke.avif"
+      },
+      {
+        "name": "Mukul Choudhary",
+        "role": "Batter",
+        "image": "/teams/players/lsg/mukul-choudhary.avif"
+      },
+      {
+        "name": "Josh Inglis",
+        "role": "Batter",
+        "image": "/teams/players/lsg/josh-inglis.avif"
+      },
+      {
+        "name": "Nicholas Pooran",
+        "role": "Batter",
+        "image": "/teams/players/lsg/nicholas-pooran.avif"
+      },
+      {
+        "name": "Mitchell Marsh",
+        "role": "All Rounder",
+        "image": "/teams/players/lsg/mitchell-marsh.avif"
+      },
+      {
+        "name": "Abdul Samad",
+        "role": "All Rounder",
+        "image": "/teams/players/lsg/abdul-samad.avif"
+      },
+      {
+        "name": "Ayush Badoni",
+        "role": "All Rounder",
+        "image": "/teams/players/lsg/ayush-badoni.avif"
+      },
+      {
+        "name": "Wanindu Hasaranga",
+        "role": "All Rounder",
+        "image": "/teams/players/lsg/wanindu-hasaranga.avif"
+      },
+      {
+        "name": "Mohammad Shami",
+        "role": "Bowler",
+        "image": "/teams/players/lsg/mohammad-shami.avif"
+      },
+      {
+        "name": "Avesh Khan",
+        "role": "Bowler",
+        "image": "/teams/players/lsg/avesh-khan.avif"
+      },
+      {
+        "name": "Digvesh Singh",
+        "role": "Bowler",
+        "image": "/teams/players/lsg/digvesh-singh.avif"
+      },
+      {
+        "name": "Arjun Tendulkar",
+        "role": "Bowler",
+        "image": "/teams/players/lsg/arjun-tendulkar.avif"
+      },
+      {
+        "name": "Mayank Yadav",
+        "role": "Bowler",
+        "image": "/teams/players/lsg/mayank-yadav.avif"
+      },
+      {
+        "name": "Anrich Nortje",
+        "role": "Bowler",
+        "image": "/teams/players/lsg/anrich-nortje.avif"
+      }
+    ]
+  },
+  "mi": {
+    "logo": "/teams/logos/mi.png",
+    "banner": "/teams/banners/mi.jpg",
+    "trophyYears": [
+      "2013",
+      "2015",
+      "2017",
+      "2019",
+      "2020"
+    ],
+    "about": [
+      "Mumbai Indians is one of the most successful and dominant franchises in the history of the Indian Premier League. Representing Mumbai, the team plays its home matches at the iconic Wankhede Stadium, where passionate fans create a high-energy atmosphere.",
+      "The franchise was founded in 2008 and is owned by Reliance Industries through its sports division. Mumbai Indians quickly established itself as a powerhouse team by focusing on squad depth, strategic planning, and talent development.",
+      "Mumbai Indians has always been known for producing and nurturing young Indian cricket talent. Legendary players such as Sachin Tendulkar, Lasith Malinga, and Kieron Pollard have contributed significantly to the team’s success over the years. The franchise is famous for its balanced combination of aggressive batting, disciplined bowling, and strong all-round performances.",
+      "The blue jersey of Mumbai Indians has become one of the most recognizable symbols in IPL cricket. The team enjoys massive fan support across India and internationally. Known for its championship mindset, MI has consistently performed well in pressure situations and knockout matches.",
+      "Today, Mumbai Indians remains a cricketing giant in the IPL, continuing to build future stars while maintaining its legacy of excellence, discipline, and winning culture. 🏏💙"
+    ],
+    "summary": "Mumbai Indians (MI) is one of the most successful franchises in the Indian Premier League (IPL). The team represents the city of Mumbai and plays its home matches at the iconic Wankhede Stadium. Known for its strong squad depth and championship mentality, Mumbai Indians has built a powerful legacy in IPL history.",
+    "players": [
+      {
+        "name": "Rohit Sharma",
+        "role": "Batter",
+        "image": "/teams/players/mi/rohit-sharma.avif"
+      },
+      {
+        "name": "Suryakumar Yadav",
+        "role": "Batter | Captain",
+        "image": "/teams/players/mi/suryakumar-yadav.avif"
+      },
+      {
+        "name": "Robin Minz",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/mi/robin-minz.avif"
+      },
+      {
+        "name": "Ryan Rickelton",
+        "role": "Batter",
+        "image": "/teams/players/mi/ryan-rickelton.avif"
+      },
+      {
+        "name": "Tilak Varma",
+        "role": "Batter",
+        "image": "/teams/players/mi/tilak-varma.avif"
+      },
+      {
+        "name": "Quinton De Kock",
+        "role": "Batter",
+        "image": "/teams/players/mi/quinton-de-kock.avif"
+      },
+      {
+        "name": "Hardik Pandya",
+        "role": "All-Rounder | Captain",
+        "image": "/teams/players/mi/hardik-pandya.avif"
+      },
+      {
+        "name": "Mitchell Santner",
+        "role": "All-Rounder",
+        "image": "/teams/players/mi/mitchell-santner.avif"
+      },
+      {
+        "name": "Will Jacks",
+        "role": "All-Rounder",
+        "image": "/teams/players/mi/will-jacks.avif"
+      },
+      {
+        "name": "Corbin Bosch",
+        "role": "All-Rounder",
+        "image": "/teams/players/mi/corbin-bosch.avif"
+      },
+      {
+        "name": "Shardul Thakur",
+        "role": "All-Rounder",
+        "image": "/teams/players/mi/shardul-thakur.avif"
+      },
+      {
+        "name": "Jasprit Bumrah",
+        "role": "Bowler",
+        "image": "/teams/players/mi/jasprit-bumrah.avif"
+      },
+      {
+        "name": "Trent Boult",
+        "role": "Bowler",
+        "image": "/teams/players/mi/trent-boult.avif"
+      },
+      {
+        "name": "Deepak Chahar",
+        "role": "Bowler",
+        "image": "/teams/players/mi/deepak-chahar.avif"
+      },
+      {
+        "name": "Ashwani Kumar",
+        "role": "Bowler",
+        "image": "/teams/players/mi/ashwani-kumar.avif"
+      },
+      {
+        "name": "Raghu Sharma",
+        "role": "Bowler",
+        "image": "/teams/players/mi/raghu-sharma.avif"
+      }
+    ]
+  },
+  "pbks": {
+    "logo": "/teams/logos/pbks.png",
+    "banner": "/teams/banners/pbks.jpg",
+    "trophyYears": [],
+    "about": [
+      "Punjab Kings (PBKS) is a franchise cricket team that competes in the Indian Premier League. The team represents the region of Mohali and plays most of its home matches at the IS Bindra Stadium and the newer Maharaja Yadavindra Singh International Cricket Stadium.",
+      "The franchise was founded in 2008 as Kings XI Punjab and was later rebranded as Punjab Kings in 2021 to create a fresh team identity. The team is jointly owned by Preity Zinta, Ness Wadia, Mohit Burman, and Karan Paul.",
+      "Punjab Kings has been one of the most entertaining yet inconsistent teams in IPL history. The franchise reached the IPL final in 2014 under the captaincy of George Bailey, but unfortunately lost to Kolkata Knight Riders. That season featured outstanding performances from players like Glenn Maxwell, David Miller, and Virender Sehwag.",
+      "PBKS is widely known for its aggressive batting style and explosive top-order hitters. Over the years, the team has included several powerful international stars and young Indian talents. The franchise continues to focus on building a balanced squad by combining experienced players with emerging cricketers.",
+      "Despite never winning an IPL championship, Punjab Kings remains a fan-favorite team due to its attacking gameplay and exciting match performances. The franchise is determined to win its first IPL trophy and establish itself as a consistent title contender in future IPL seasons. 🏏❤️"
+    ],
+    "summary": "Punjab Kings (PBKS) is a professional cricket team that competes in the Indian Premier League (IPL). The franchise represents the city of Mohali and plays its home matches at the Maharaja Yadavindra Singh International Cricket Stadium and previously at the IS Bindra Stadium. The team is known for its attacking style of cricket and exciting batting lineups.",
+    "players": [
+      {
+        "name": "Shreyas Iyer",
+        "role": "Batter | Captain",
+        "image": "/teams/players/pbks/shreyas-iyer.avif"
+      },
+      {
+        "name": "Nehal Wadhera",
+        "role": "Batter",
+        "image": "/teams/players/pbks/nehal-wadhera.avif"
+      },
+      {
+        "name": "Vishnu Vinod",
+        "role": "Batter",
+        "image": "/teams/players/pbks/vishnu-vinod.avif"
+      },
+      {
+        "name": "Harnoor Pannu",
+        "role": "Batter",
+        "image": "/teams/players/pbks/harnoor-pannu.avif"
+      },
+      {
+        "name": "Pyla Avinash",
+        "role": "Batter",
+        "image": "/teams/players/pbks/pyla-avinash.avif"
+      },
+      {
+        "name": "Prabhsimran Singh",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/pbks/prabhsimran-singh.avif"
+      },
+      {
+        "name": "Shashank Singh",
+        "role": "Batter",
+        "image": "/teams/players/pbks/shashank-singh.avif"
+      },
+      {
+        "name": "Marcus Stoinis",
+        "role": "All-Rounder",
+        "image": "/teams/players/pbks/marcus-stoinis.avif"
+      },
+      {
+        "name": "Marco Jansen",
+        "role": "All-Rounder",
+        "image": "/teams/players/pbks/marco-jansen.avif"
+      },
+      {
+        "name": "Harpreet Brar",
+        "role": "All-Rounder",
+        "image": "/teams/players/pbks/harpreet-brar.avif"
+      },
+      {
+        "name": "Priyansh Arya",
+        "role": "All-Rounder",
+        "image": "/teams/players/pbks/priyansh-arya.avif"
+      },
+      {
+        "name": "Azmatullah Omarzai",
+        "role": "All-Rounder",
+        "image": "/teams/players/pbks/azmatullah-omarzai.avif"
+      },
+      {
+        "name": "Mitch Owen",
+        "role": "All-Rounder",
+        "image": "/teams/players/pbks/mitch-owen.avif"
+      },
+      {
+        "name": "Musheer Khan",
+        "role": "All-Rounder",
+        "image": "/teams/players/pbks/musheer-khan.avif"
+      },
+      {
+        "name": "Suryansh Shedge",
+        "role": "All-Rounder",
+        "image": "/teams/players/pbks/suryansh-shedge.avif"
+      },
+      {
+        "name": "Ashrdeep Singh",
+        "role": "Bowler",
+        "image": "/teams/players/pbks/ashrdeep-singh.avif"
+      },
+      {
+        "name": "Yuzvendra Chahal",
+        "role": "Bowler",
+        "image": "/teams/players/pbks/yuzvendra-chahal.avif"
+      },
+      {
+        "name": "Yash Thakur",
+        "role": "Bowler",
+        "image": "/teams/players/pbks/yash-thakur.avif"
+      },
+      {
+        "name": "Lockie Ferguson",
+        "role": "Bowler",
+        "image": "/teams/players/pbks/lockie-ferguson.avif"
+      },
+      {
+        "name": "Pravin Dubey",
+        "role": "Bowler",
+        "image": "/teams/players/pbks/pravin-dubey.avif"
+      }
+    ]
+  },
+  "rr": {
+    "logo": "/teams/logos/rr.png",
+    "banner": "/teams/banners/rr.jpg",
+    "trophyYears": [
+      "2008"
+    ],
+    "about": [
+      "Rajasthan Royals (RR) is one of the original franchises of the Indian Premier League. The team represents the city of Jaipur and plays its home matches at the historic Sawai Mansingh Stadium, which is known for its passionate local cricket crowd.",
+      "The franchise was founded in 2008, and it gained instant fame by winning the inaugural IPL championship under the legendary captaincy of Shane Warne. In the final, Rajasthan Royals defeated Chennai Super Kings, creating one of the biggest underdog success stories in IPL history.",
+      "RR is widely recognized for its philosophy of discovering and nurturing young cricket talent. The franchise has produced several future international stars through its scouting system. Over the years, the team has focused on combining young Indian players with experienced international cricketers to build a balanced squad.",
+      "Rajasthan Royals is known for its fearless brand of cricket, smart match strategies, and focus on emerging talent. The team wears a distinctive pink and blue jersey that symbolizes its royal identity and unique brand style.",
+      "Today, Rajasthan Royals continues to remain a competitive IPL team, aiming to repeat its historic championship success while maintaining its tradition of supporting young and dynamic cricketers. 🏏"
+    ],
+    "summary": "Rajasthan Royals (RR) is one of the original franchises in the Indian Premier League (IPL). The team represents the city of Jaipur and plays most of its home matches at the historic Sawai Mansingh Stadium. Known for discovering young talents and playing fearless cricket, Rajasthan Royals has built a unique identity in the IPL.",
+    "players": [
+      {
+        "name": "Riyan Parag",
+        "role": "Batter | Captain",
+        "image": "/teams/players/rr/riyan-parag.avif"
+      },
+      {
+        "name": "Vaibhav Suryavanshi",
+        "role": "Batter",
+        "image": "/teams/players/rr/vaibhav-suryavanshi.avif"
+      },
+      {
+        "name": "Yashasvi Jaiswal",
+        "role": "Batter",
+        "image": "/teams/players/rr/yashasvi-jaiswal.avif"
+      },
+      {
+        "name": "Shimron Hetmyer",
+        "role": "Batter",
+        "image": "/teams/players/rr/shimron-hetmyer.avif"
+      },
+      {
+        "name": "Dhruv Jurel",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/rr/dhruv-jurel.avif"
+      },
+      {
+        "name": "Ravindra Jadeja",
+        "role": "All Rounder",
+        "image": "/teams/players/rr/ravindra-jadeja.avif"
+      },
+      {
+        "name": "Yudhvir Singh",
+        "role": "All Rounder",
+        "image": "/teams/players/rr/yudhvir-singh.avif"
+      },
+      {
+        "name": "Sam Curran",
+        "role": "All Rounder",
+        "image": "/teams/players/rr/sam-curran.avif"
+      },
+      {
+        "name": "Jofra Archer",
+        "role": "Bowler",
+        "image": "/teams/players/rr/jofra-archer.avif"
+      },
+      {
+        "name": "Tushar Deshpande",
+        "role": "Bowler",
+        "image": "/teams/players/rr/tushar-deshpande.avif"
+      },
+      {
+        "name": "Ravi Bishnoi",
+        "role": "Bowler",
+        "image": "/teams/players/rr/ravi-bishnoi.avif"
+      },
+      {
+        "name": "Sandeep Sharma",
+        "role": "Bowler",
+        "image": "/teams/players/rr/sandeep-sharma.avif"
+      },
+      {
+        "name": "Nandre Burder",
+        "role": "Bowler",
+        "image": "/teams/players/rr/nandre-burder.avif"
+      },
+      {
+        "name": "Adam Milne",
+        "role": "Bowler",
+        "image": "/teams/players/rr/adam-milne.avif"
+      }
+    ]
+  },
+  "rcb": {
+    "logo": "/teams/logos/rcb.png",
+    "banner": "/teams/banners/rcb.jpg",
+    "trophyYears": [
+      "2025",
+      "2026"
+    ],
+    "about": [
+      "Royal Challengers Bengaluru (RCB) is one of the most popular and widely supported franchises in the Indian Premier League. The team represents the city of Bengaluru and plays its home matches at the M. Chinnaswamy Stadium, which is famous for its high-scoring T20 matches and passionate fan atmosphere.",
+      "The franchise was founded in 2008 and is owned by United Spirits Limited. Over the years, RCB has become one of the most commercially popular IPL teams due to its global fan base and star player lineup.",
+      "One of the most iconic players associated with RCB is Virat Kohli, who has played for the franchise since the beginning of his IPL career. Kohli is also the leading run scorer in IPL history and served as RCB captain for several seasons. Other legendary players who represented the team include AB de Villiers and Chris Gayle, both of whom delivered unforgettable batting performances.",
+      "RCB is known for its aggressive batting philosophy, entertainment value, and massive fan following known as the “RCB Army.” The team’s red and gold jersey has become a symbol of cricket passion across India.",
+      "Today, RCB continues its quest to win the IPL trophy and end its long championship drought while maintaining its identity as one of the league’s most beloved teams. 🏏❤️"
+    ],
+    "summary": "Royal Challengers Bengaluru (RCB) is one of the most popular teams in the Indian Premier League (IPL). The franchise represents the city of Bengaluru and plays its home matches at the iconic M. Chinnaswamy Stadium. Known for its passionate fan base and star-studded lineups, RCB has become one of the most followed teams in the tournament.",
+    "players": [
+      {
+        "name": "Rajat Patidat",
+        "role": "Batter",
+        "image": "/teams/players/rcb/rajat-patidat.avif"
+      },
+      {
+        "name": "Virat Kohli",
+        "role": "Batter",
+        "image": "/teams/players/rcb/virat-kohli.avif"
+      },
+      {
+        "name": "Devdutt Padikkal",
+        "role": "Batter",
+        "image": "/teams/players/rcb/devdutt-padikkal.avif"
+      },
+      {
+        "name": "Phil Salt",
+        "role": "Batter",
+        "image": "/teams/players/rcb/phil-salt.avif"
+      },
+      {
+        "name": "Jitesh Sharma",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/rcb/jitesh-sharma.avif"
+      },
+      {
+        "name": "Krunal Pandya",
+        "role": "All-Rounder",
+        "image": "/teams/players/rcb/krunal-pandya.avif"
+      },
+      {
+        "name": "Swapnil Singh",
+        "role": "All-Rounder",
+        "image": "/teams/players/rcb/swapnil-singh.avif"
+      },
+      {
+        "name": "Tim David",
+        "role": "All-Rounder",
+        "image": "/teams/players/rcb/tim-david.avif"
+      },
+      {
+        "name": "Romario Shepherd",
+        "role": "All-Rounder",
+        "image": "/teams/players/rcb/romario-shepherd.avif"
+      },
+      {
+        "name": "Jacob Bethell",
+        "role": "All-Rounder",
+        "image": "/teams/players/rcb/jacob-bethell.avif"
+      },
+      {
+        "name": "Venkatesh Iyer",
+        "role": "All-Rounder",
+        "image": "/teams/players/rcb/venkatesh-iyer.avif"
+      },
+      {
+        "name": "Josh Hazlewood",
+        "role": "Bowler",
+        "image": "/teams/players/rcb/josh-hazlewood.avif"
+      },
+      {
+        "name": "Bhuvneshwar Kumar",
+        "role": "Bowler",
+        "image": "/teams/players/rcb/bhuvneshwar-kumar.avif"
+      },
+      {
+        "name": "Nuwan Thushara",
+        "role": "Bowler",
+        "image": "/teams/players/rcb/nuwan-thushara.avif"
+      },
+      {
+        "name": "Abhinandan Singh",
+        "role": "Bowler",
+        "image": "/teams/players/rcb/abhinandan-singh.avif"
+      },
+      {
+        "name": "Yash Dayal",
+        "role": "Bowler",
+        "image": "/teams/players/rcb/yash-dayal.avif"
+      }
+    ]
+  },
+  "srh": {
+    "logo": "/teams/logos/srh.png",
+    "banner": "/teams/banners/srh.jpg",
+    "trophyYears": [
+      "2016"
+    ],
+    "about": [
+      "Sunrisers Hyderabad (SRH) is a professional cricket franchise that competes in the Indian Premier League. The team represents the city of Hyderabad and plays its home matches at the Rajiv Gandhi International Cricket Stadium, which is known for supporting competitive T20 cricket conditions.",
+      "The franchise was founded in 2012 after the termination of the earlier Hyderabad team, Deccan Chargers. SRH is owned by Sun TV Network, one of the largest entertainment networks in India.",
+      "Sunrisers Hyderabad achieved their greatest success in 2016, when they won their first and only IPL championship under the captaincy of David Warner. In the final, SRH defeated Royal Challengers Bengaluru to lift the trophy. Warner’s explosive batting and strong leadership were key factors in that historic season.",
+      "The franchise is widely recognized for its world-class bowling attack. Players like Pat Cummins have played crucial roles. SRH has traditionally focused on disciplined bowling strategies combined with controlled batting performances.",
+      "Other important players who have represented the team include Kane Williamson, who led the team to the 2018 IPL final, and several promising young Indian cricketers developed through the franchise system."
+    ],
+    "summary": "Sunrisers Hyderabad (SRH) is a professional cricket franchise that competes in the Indian Premier League (IPL). The team represents the city of Hyderabad and plays its home matches at the Rajiv Gandhi International Cricket Stadium.",
+    "players": [
+      {
+        "name": "Ishan Kishan",
+        "role": "Wicket Keeper",
+        "image": "/teams/players/srh/ishan-kishan.avif"
+      },
+      {
+        "name": "Travish Head",
+        "role": "Batter",
+        "image": "/teams/players/srh/travish-head.avif"
+      },
+      {
+        "name": "Abhishek Sharma",
+        "role": "Batter",
+        "image": "/teams/players/srh/abhishek-sharma.avif"
+      },
+      {
+        "name": "Heinrich Klaasen",
+        "role": "Batter",
+        "image": "/teams/players/srh/heinrich-klaasen.avif"
+      },
+      {
+        "name": "Kamindu Mendis",
+        "role": "All Rounder",
+        "image": "/teams/players/srh/kamindu-mendis.avif"
+      },
+      {
+        "name": "Nitish Kumar Reddy",
+        "role": "All-Rounder",
+        "image": "/teams/players/srh/nitish-kumar-reddy.avif"
+      },
+      {
+        "name": "Liam Livingstone",
+        "role": "All-Rounder",
+        "image": "/teams/players/srh/liam-livingstone.avif"
+      },
+      {
+        "name": "Brydon Carse",
+        "role": "All-Rounder",
+        "image": "/teams/players/srh/brydon-carse.avif"
+      },
+      {
+        "name": "Pat Cummins",
+        "role": "Bowler | Captain",
+        "image": "/teams/players/srh/pat-cummins.avif"
+      },
+      {
+        "name": "Jaydev Unadkat",
+        "role": "Bowler",
+        "image": "/teams/players/srh/jaydev-unadkat.avif"
+      },
+      {
+        "name": "Zeeshan Ansari",
+        "role": "Bowler",
+        "image": "/teams/players/srh/zeeshan-ansari.avif"
+      },
+      {
+        "name": "Eshan Malinga",
+        "role": "Bowler",
+        "image": "/teams/players/srh/eshan-malinga.avif"
+      },
+      {
+        "name": "Amit Kumar",
+        "role": "Bowler",
+        "image": "/teams/players/srh/amit-kumar.avif"
+      }
+    ]
+  }
+}

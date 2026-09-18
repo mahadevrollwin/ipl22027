@@ -5,6 +5,12 @@ export const SITE = {
   seasonDate: "2027-03-27T19:30:00+05:30",
 };
 
+export type TeamPlayer = {
+  name: string;
+  role: string;
+  image?: string;
+};
+
 export type Team = {
   id: string;
   short: string;
@@ -27,6 +33,12 @@ export type Team = {
   };
   watch: string[];
   blurb: string;
+  logo?: string;
+  banner?: string;
+  trophyYears?: string[];
+  about?: string[];
+  summary?: string;
+  players?: TeamPlayer[];
 };
 
 export const TEAMS: Team[] = [

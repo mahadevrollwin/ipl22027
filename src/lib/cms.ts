@@ -13,6 +13,7 @@ import {
   getArticle as getStaticArticle,
   getTeam as getStaticTeam,
 } from "@/lib/data";
+import { enrichTeam, enrichTeams } from "@/lib/teamEnrich";
 import { client } from "@/sanity/client";
 import { isSanityConfigured } from "@/sanity/env";
 import {
@@ -258,14 +259,15 @@ export async function getVideos() {
 
 export async function getTeams(): Promise<Team[]> {
   const docs = await fetchSanity<Team[]>(teamsQuery);
-  if (!docs?.length) return TEAMS;
-  return docs.map(mapTeam);
+  if (!docs?.length) return enrichTeams(TEAMS);
+  return enrichTeams(docs.map(mapTeam));
 }
 
 export async function getTeamBySlug(id: string): Promise<Team | undefined> {
   const doc = await fetchSanity<Team>(teamBySlugQuery, { slug: id });
-  if (doc?.id) return mapTeam(doc);
-  return getStaticTeam(id);
+  if (doc?.id) return enrichTeam(mapTeam(doc));
+  const team = getStaticTeam(id);
+  return team ? enrichTeam(team) : undefined;
 }
 
 export async function getMatches(): Promise<{ playoffs: Match[]; league: Match[] }> {
