@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Team } from "@/lib/data";
-import { FormPips } from "@/components/TeamBadge";
 
 export function TeamCard({ team, index = 0 }: { team: Team; index?: number }) {
   return (
-    <Link
-      href={`/teams/${team.id}`}
+    <article
       className="team-card group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-line bg-white shadow-[0_10px_30px_rgb(19_46_115_/_0.06)] transition duration-300 hover:-translate-y-1.5 hover:border-ipl/25 hover:shadow-[0_18px_40px_rgb(19_46_115_/_0.14)]"
       style={{ animationDelay: `${index * 45}ms` }}
     >
@@ -54,31 +52,16 @@ export function TeamCard({ team, index = 0 }: { team: Team; index?: number }) {
             {team.summary || team.blurb}
           </p>
 
-          <div className="mt-5 grid grid-cols-3 gap-2 border-t border-line pt-4">
-            <div>
-              <div className="text-[10px] font-bold tracking-[0.14em] text-faint uppercase">2026</div>
-              <div className="mt-1 text-sm font-extrabold text-navy">
-                {team.record2026.w}-{team.record2026.l}
-              </div>
-            </div>
-            <div>
-              <div className="text-[10px] font-bold tracking-[0.14em] text-faint uppercase">Pts</div>
-              <div className="mt-1 text-sm font-extrabold text-navy">{team.record2026.pts}</div>
-            </div>
-            <div>
-              <div className="text-[10px] font-bold tracking-[0.14em] text-faint uppercase">Titles</div>
-              <div className="mt-1 text-sm font-extrabold text-navy">{team.titles}</div>
-            </div>
-          </div>
-
-          <div className="mt-4 flex items-center justify-between gap-3">
-            <FormPips form={team.record2026.form} />
-            <span className="text-xs font-bold text-ipl transition group-hover:translate-x-0.5">
-              View team →
-            </span>
+          <div className="mt-6 flex border-t border-line pt-4">
+            <Link
+              href={`/teams/${team.id}`}
+              className="inline-flex min-h-10 items-center justify-center rounded-full bg-ipl px-4 text-sm font-bold text-white transition hover:bg-navy group-hover:translate-x-0"
+            >
+              View Team →
+            </Link>
           </div>
         </div>
       </div>
-    </Link>
+    </article>
   );
 }

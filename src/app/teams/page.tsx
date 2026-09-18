@@ -30,7 +30,7 @@ export default async function TeamsPage() {
               Logos, squads and 2026 records — open any card for the full franchise page.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
             {sorted.map((team, index) => (
               <TeamCard key={team.id} team={team} index={index} />
             ))}
