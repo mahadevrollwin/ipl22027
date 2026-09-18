@@ -465,12 +465,116 @@ export const NEWS: Article[] = [
     date: "01 Jun 2026",
     kind: "blog",
     title: "Vaibhav Sooryavanshi: the season that rewrote the record book",
-    excerpt: "776 runs, 72 sixes, Orange Cap, MVP, Emerging Player — and still a teenager.",
+    excerpt:
+      "Every few decades, cricket encounters a prodigy who does not merely knock on the doors of top-tier cricket, but kicks them off their hinges.",
     hero: "pink",
+    coverUrl: "/news/sooryavanshi.jpg",
     body: [
-      "Rajasthan Royals batter Vaibhav Sooryavanshi finished IPL 2026 with 776 runs in 16 innings at a strike rate of 237.30. He was 15 years and 65 days old when the Orange Cap was confirmed, the youngest winner in league history.",
-      "He also took Most Valuable Player, Emerging Player, Super Striker and Super Sixes (72 sixes). Shubman Gill (732) and Sai Sudharsan (722) were the next names on the run chart; both fell cheaply in the final, locking the cap in Jaipur pink.",
-      "Season 20 will be the first time oppositions have a full winter to plan for him. That is the tax on a historic summer — and the reason every net session in Jaipur will be watched a little more closely.",
+      "Every few decades, cricket encounters a prodigy who does not merely knock on the doors of top-tier cricket, but kicks them off their hinges. From Sachin Tendulkar taking on Waqar Younis at sixteen to Brian Lara carving up domestic attacks in the Caribbean, early brilliance is an indelible part of the sport's lore.",
+      "Yet, the sheer velocity of Vaibhav Sooryavanshi’s ascent has turned standard developmental curves into relics of the past.",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "Every few decades, cricket encounters a prodigy who does not merely knock on the doors of top-tier cricket, but kicks them off their hinges. From Sachin Tendulkar taking on Waqar Younis at sixteen to Brian Lara carving up domestic attacks in the Caribbean, early brilliance is an indelible part of the sport's lore. Yet, the sheer velocity of Vaibhav Sooryavanshi’s ascent has turned standard developmental curves into relics of the past.",
+      },
+      {
+        type: "p",
+        text: "What cricket witnessed across his breakout domestic and IPL campaign wasn't just raw talent finding its footing—it was a comprehensive, aggressive dismantling of historical benchmarks.",
+      },
+      { type: "h2", text: "From Samastipur to the World Stage" },
+      {
+        type: "p",
+        text: "Born in March 2011 in Tajpur, a small town in Bihar’s Samastipur district, Sooryavanshi’s story began with grueling commutes. Accompanied by his father Sanjiv, who harbored his own unfulfilled cricketing ambitions, the boy traveled over 100 kilometers back and forth between Samastipur and Patna on alternate days just to access quality nets.",
+      },
+      {
+        type: "p",
+        text: "His progress was instantaneous:",
+      },
+      {
+        type: "ul",
+        items: [
+          "January 2024: Made his Ranji Trophy debut for Bihar against Mumbai at 12 years and 284 days, becoming the fourth-youngest player in first-class history and the youngest in nearly four decades.",
+          "September 2024: Smashed a 58-ball youth Test century against Australia U-19, the fastest ever by an Indian player at that level.",
+          "November 2024: Became the youngest player bought at an IPL auction when Rajasthan Royals secured him for ₹1.10 crore.",
+        ],
+      },
+      {
+        type: "p",
+        text: "What looked like a bold bet on the future quickly turned into an immediate tactical masterstroke.",
+      },
+      { type: "h2", text: "The Numbers That Stunned the Game" },
+      {
+        type: "p",
+        text: "Sooryavanshi didn't spend his debut campaigns absorbing pressure from the bench. Thrust into opening the innings, the left-hander unleashed an ultra-aggressive style that left seasoned international bowlers scrambling for answers.",
+      },
+      {
+        type: "p",
+        text: "The statistics from his whirlwind surge speak for themselves:",
+      },
+      {
+        type: "table",
+        caption: "Record-Breaking Surge",
+        headers: ["Milestone / Record", "Achievement Details", "Historical Context"],
+        rows: [
+          [
+            "Youngest T20 Centurion",
+            "101 off 38 balls vs. Gujarat Titans (IPL)",
+            "Achieved at 14 years, 32 days; youngest in professional men's T20 history.",
+          ],
+          [
+            "Fastest Indian IPL Century",
+            "35 balls to three figures",
+            "Second-fastest overall behind Chris Gayle’s legendary 30-ball blitz.",
+          ],
+          [
+            "Fastest to 1,000 T20 Runs",
+            "Reached in 473 balls",
+            "Eclipsed the global mark held by Mitchell Owen (533 balls).",
+          ],
+          [
+            "IPL Season Sixes Record",
+            "Smashed 72 maximums in a single edition",
+            "Broke Chris Gayle’s long-standing single-season record of 59 sixes.",
+          ],
+          [
+            "U-19 World Cup Final Apex",
+            "175 off 80 balls vs. England",
+            "Highest individual score ever recorded in an Under-19 World Cup final.",
+          ],
+        ],
+      },
+      { type: "h2", text: "Mechanics of a Teenage Powerhouse" },
+      {
+        type: "p",
+        text: "Cricket purists often associate youthful prodigies with delicate timing, nimble footwork, and wristy placements. Sooryavanshi, however, represents modern power hitting engineered from the ground up.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Base and Stillness: Modeled loosely on Brian Lara’s high backlift, Sooryavanshi remains remarkably still through impact. He transfers his body weight onto his front foot with clean bat flow, allowing him to pull 140+ kph deliveries in front of square with disdain.",
+          'Aggression in the First Over: Against Sunrisers Hyderabad, he became the first batter in IPL history to hit four sixes in the opening over of an innings, taking down Praful Hinge from ball one. His mindset eliminates tentative "sighters"—every delivery within his arc is targeted for the boundary rope.',
+          "Fearless Range: While conventional openers rely on the powerplay field restrictions to punch through the infield, Sooryavanshi clears boundary fences with ease. His tally of 12 sixes in a single IPL innings against SRH set a new benchmark for an Indian batter.",
+        ],
+      },
+      { type: "h2", text: "Rewriting Domestic Cricket Benchmarks" },
+      {
+        type: "p",
+        text: "Beyond the bright lights of the IPL, his domestic output was equally staggering. In the 2025–26 Vijay Hazare Trophy, he smashed a 36-ball hundred against Arunachal Pradesh, obliterating AB de Villiers' record for the fastest 150 in List A cricket by getting there in just 59 deliveries before finishing with 190 off 84 balls.",
+      },
+      {
+        type: "p",
+        text: "Later that season, appointed vice-captain of Bihar's Ranji squad at just 14, he balanced tactical maturity with uninhibited hitting, proving his dominance was format-agnostic.",
+      },
+      { type: "h2", text: "The Road Ahead" },
+      {
+        type: "p",
+        text: "Managing a prodigy in the era of social media scrutiny and 24/7 franchise coverage is fraught with peril. Bowlers will find tape, analysts will study his trigger movements, and opposition captains will set deeper traps outside off stump.",
+      },
+      {
+        type: "p",
+        text: "Yet, watching Vaibhav Sooryavanshi stand tall in Rajasthan pink, flashing his bat through the line with utter clarity, suggests this record-shattering year was no flash in the pan. He did not merely arrive on the scene; he redefined what is possible for a teenager in modern professional cricket. The record books have been rewritten, and at this rate, the ink will barely have time to dry.",
+      },
     ],
   },
   {
