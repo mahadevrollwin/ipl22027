@@ -1,5 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <circle cx="32" cy="32" r="30" fill="#19398A"/>
-  <circle cx="32" cy="32" r="20" fill="none" stroke="#F5C518" stroke-width="3"/>
-  <text x="32" y="38" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" fill="#ffffff">27</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IPL 2027">
+  <defs>
+    <linearGradient id="gold" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7D24A"/>
+      <stop offset="1" stop-color="#E6B008"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#19398A"/>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="url(#gold)" stroke-width="3.5"/>
+  <circle cx="32" cy="32" r="16.5" fill="#132E73"/>
+  <text
+    x="32"
+    y="38.5"
+    text-anchor="middle"
+    font-family="Arial Black, Arial, Helvetica, sans-serif"
+    font-size="18"
+    font-weight="800"
+    fill="#FFFFFF"
+  >27</text>
 </svg>
