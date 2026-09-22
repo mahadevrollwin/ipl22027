@@ -12,7 +12,7 @@ export function TeamTile({ team }: { team: Team }) {
     >
       <div
         aria-hidden
-        className="absolute inset-0 opacity-[0.62]"
+        className="absolute inset-0 opacity-[0.72]"
         style={{ background: `linear-gradient(160deg, ${team.color}, #120e0b 78%)` }}
       />
       <div aria-hidden className="absolute inset-0 bg-[#1a2338]/35" />
