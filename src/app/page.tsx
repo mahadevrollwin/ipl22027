@@ -38,6 +38,11 @@ export default async function HomePage() {
     getSettings(),
   ]);
 
+  const championsBlog = articles.find((article) => article.id === "final-recap");
+  const homepageNews = championsBlog
+    ? [championsBlog, ...articles.filter((article) => article.id !== "final-recap")].slice(0, 4)
+    : articles.slice(0, 4);
+
   return (
     <>
       <HeroVideos videos={videos} />
@@ -46,7 +51,7 @@ export default async function HomePage() {
         <Wrap>
           <SectionHead title="News" href="/news" />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {articles.slice(0, 4).map((n) => (
+            {homepageNews.map((n) => (
               <NewsCard key={n.id} article={n} />
             ))}
           </div>
@@ -145,7 +150,7 @@ export default async function HomePage() {
                   href="/news/final-recap"
                   className="inline-flex min-h-10 items-center justify-center rounded-full bg-ipl px-5 text-sm font-bold text-white transition hover:opacity-90"
                 >
-                  Match Report
+                  Read More
                 </Link>
               </div>
             </div>

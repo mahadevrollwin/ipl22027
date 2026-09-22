@@ -564,12 +564,12 @@ export const NEWS: Article[] = [
   },
   {
     id: "final-recap",
-    tag: "Match report",
+    tag: "RCB",
     date: "31 May 2026",
-    kind: "report",
-    title: "Final recap: Kohli steers RCB home in Ahmedabad",
+    kind: "blog",
+    title: "RCB 2026 IPL Champions: A Historic Back-to-Back Triumph",
     excerpt:
-      "There are nights that belong to the record books, and then there are nights etched straight into cricketing folklore. The IPL 2026 Final at Ahmedabad belonged firmly to the latter.",
+      "Royal Challengers Bengaluru defeated Gujarat Titans by five wickets in the IPL 2026 final at Narendra Modi Stadium to successfully defend their crown.",
     hero: "gold",
     coverUrl: "/news/final-recap.jpg",
     body: [
