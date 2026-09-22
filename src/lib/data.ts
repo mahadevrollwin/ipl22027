@@ -571,7 +571,7 @@ export const NEWS: Article[] = [
     excerpt:
       "Royal Challengers Bengaluru have done it again. After finally ending their long wait for an IPL title in 2025, RCB successfully defended their crown in 2026, defeating Gujarat Titans by five wickets in the IPL final.",
     hero: "gold",
-    coverUrl: "/news/final-recap.jpg",
+    coverUrl: "/news/rcb-2026-ipl-champions.jpg",
     body: [
       "There are nights that belong to the record books, and then there are nights etched straight into cricketing folklore. The IPL 2026 Final at the Narendra Modi Stadium in Ahmedabad belonged firmly to the latter.",
       "Under the blinding floodlights of the world’s largest cricket stadium, Royal Challengers Bengaluru defended their crown, overpowering Gujarat Titans by five wickets.",
