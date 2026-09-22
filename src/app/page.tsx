@@ -38,9 +38,10 @@ export default async function HomePage() {
     getSettings(),
   ]);
 
-  const championsBlog = articles.find((article) => article.id === "final-recap");
+  const championsId = "rcb-2026-ipl-champions-a-historic-back-to-back-triumph";
+  const championsBlog = articles.find((article) => article.id === championsId);
   const homepageNews = championsBlog
-    ? [championsBlog, ...articles.filter((article) => article.id !== "final-recap")].slice(0, 4)
+    ? [championsBlog, ...articles.filter((article) => article.id !== championsId)].slice(0, 4)
     : articles.slice(0, 4);
 
   return (
@@ -135,19 +136,25 @@ export default async function HomePage() {
           <div className="flex flex-col-reverse overflow-hidden rounded-2xl bg-bg-3 md:flex-row-reverse">
             <div className="relative aspect-video w-full shrink-0 md:aspect-auto md:min-h-[300px] md:w-1/2">
               <Image
-                src="/news/final-recap.jpg"
-                alt="2026 winners Royal Challengers Bengaluru"
+                src={championsBlog?.coverUrl || "/news/final-recap.jpg"}
+                alt="RCB 2026 IPL Champions: A Historic Back-to-Back Triumph"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
             <div className="flex flex-1 flex-col justify-start gap-4 p-6 sm:p-8 md:p-10">
-              <h2 className="text-[28px] leading-tight font-semibold text-navy sm:text-[32px]">2026 winners</h2>
-              <p className="max-w-[54ch] text-[16px] leading-7 text-navy/80">{settings.winnersIntro}</p>
+              <h2 className="text-[28px] leading-tight font-semibold text-navy sm:text-[32px]">
+                RCB 2026 IPL Champions: A Historic Back-to-Back Triumph
+              </h2>
+              <p className="max-w-[54ch] text-[16px] leading-7 text-navy/80">
+                Royal Challengers Bengaluru have done it again. After finally ending their long wait for an
+                IPL title in 2025, RCB successfully defended their crown in 2026, defeating Gujarat Titans by
+                five wickets in the IPL final.
+              </p>
               <div className="mt-auto flex flex-wrap items-center pt-2">
                 <Link
-                  href="/news/final-recap"
+                  href="/news/rcb-2026-ipl-champions-a-historic-back-to-back-triumph"
                   className="inline-flex min-h-10 items-center justify-center rounded-full bg-ipl px-5 text-sm font-bold text-white transition hover:opacity-90"
                 >
                   Read More

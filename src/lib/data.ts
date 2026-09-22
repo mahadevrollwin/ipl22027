@@ -563,13 +563,13 @@ export const NEWS: Article[] = [
     ],
   },
   {
-    id: "final-recap",
+    id: "rcb-2026-ipl-champions-a-historic-back-to-back-triumph",
     tag: "RCB",
     date: "31 May 2026",
     kind: "blog",
     title: "RCB 2026 IPL Champions: A Historic Back-to-Back Triumph",
     excerpt:
-      "Royal Challengers Bengaluru defeated Gujarat Titans by five wickets in the IPL 2026 final at Narendra Modi Stadium to successfully defend their crown.",
+      "Royal Challengers Bengaluru have done it again. After finally ending their long wait for an IPL title in 2025, RCB successfully defended their crown in 2026, defeating Gujarat Titans by five wickets in the IPL final.",
     hero: "gold",
     coverUrl: "/news/final-recap.jpg",
     body: [
