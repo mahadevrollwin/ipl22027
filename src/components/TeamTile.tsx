@@ -17,19 +17,23 @@ export function TeamTile({ team }: { team: Team }) {
       />
       <div aria-hidden className="absolute inset-0 bg-[#1a2338]/35" />
 
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-3 -bottom-4 z-0 size-[118px] opacity-[0.38] sm:size-[128px]"
+      >
+        <Image
+          src={logo}
+          alt=""
+          fill
+          sizes="128px"
+          className="object-contain drop-shadow-[0_4px_12px_rgb(0_0_0_/_0.25)]"
+        />
+      </div>
+
       <div className="relative z-[1] flex items-start justify-between gap-2">
         <strong className="text-[30px] leading-none font-extrabold tracking-tight sm:text-[32px]">
           {team.short}
         </strong>
-        <div className="grid size-11 shrink-0 place-items-center rounded-full bg-white/90 p-1.5 shadow-sm ring-1 ring-white/40 sm:size-12">
-          <Image
-            src={logo}
-            alt=""
-            width={40}
-            height={40}
-            className="h-full w-full object-contain"
-          />
-        </div>
       </div>
 
       <span className="relative z-[1] text-[13px] opacity-90">
