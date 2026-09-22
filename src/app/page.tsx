@@ -21,7 +21,7 @@ import {
   getWinners,
   standingsFromTeams,
 } from "@/lib/cms";
-import { withAwardMedia, winnerCardColor } from "@/lib/data";
+import { withAwardMedia, winnerCardColor, winnerTeamMeta } from "@/lib/data";
 
 export const revalidate = 60;
 
@@ -182,16 +182,32 @@ export default async function HomePage() {
         <Wrap>
           <SectionHead title="Past winners" />
           <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4 lg:grid-cols-8">
-            {winners.map((w) => (
-              <article
-                key={w.year}
-                className="min-h-[88px] rounded-2xl p-3 text-white shadow-sm"
-                style={{ backgroundColor: winnerCardColor(w.team) }}
-              >
-                <b className="block text-sm text-white/90">{w.year}</b>
-                <span className="text-[13px] font-bold text-white">{w.team}</span>
-              </article>
-            ))}
+            {winners.map((w) => {
+              const meta = winnerTeamMeta(w.team);
+              return (
+                <article
+                  key={w.year}
+                  className="group flex min-h-[88px] flex-col justify-between rounded-2xl p-3 text-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgb(19_46_115_/_0.18)] hover:brightness-110"
+                  style={{ backgroundColor: winnerCardColor(w.team) }}
+                >
+                  <b className="block text-sm text-white/90">{w.year}</b>
+                  <div className="mt-2 flex items-center gap-2">
+                    {meta.logo ? (
+                      <span className="grid size-8 shrink-0 place-items-center rounded-full bg-white/95 p-1 shadow-sm ring-1 ring-white/40 transition duration-300 group-hover:scale-105">
+                        <Image
+                          src={meta.logo}
+                          alt={`${meta.short} logo`}
+                          width={28}
+                          height={28}
+                          className="h-full w-full object-contain"
+                        />
+                      </span>
+                    ) : null}
+                    <span className="text-[13px] font-bold tracking-wide text-white">{meta.short}</span>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </Wrap>
       </section>

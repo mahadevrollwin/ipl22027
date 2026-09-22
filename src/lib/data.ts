@@ -838,10 +838,30 @@ const WINNER_CARD_COLORS: Record<string, string> = {
   "Rajasthan Royals": "#c4166e",
 };
 
+const WINNER_TEAM_META: Record<string, { short: string; logo?: string }> = {
+  "Royal Challengers Bengaluru": { short: "RCB", logo: "/teams/logos/rcb.png" },
+  "Kolkata Knight Riders": { short: "KKR", logo: "/teams/logos/kkr.png" },
+  "Chennai Super Kings": { short: "CSK", logo: "/teams/logos/csk.png" },
+  "Gujarat Titans": { short: "GT", logo: "/teams/logos/gt.png" },
+  "Mumbai Indians": { short: "MI", logo: "/teams/logos/mi.png" },
+  "Sunrisers Hyderabad": { short: "SRH", logo: "/teams/logos/srh.png" },
+  "Deccan Chargers": { short: "DC" },
+  "Rajasthan Royals": { short: "RR", logo: "/teams/logos/rr.png" },
+};
+
 export function winnerCardColor(teamName: string) {
   if (WINNER_CARD_COLORS[teamName]) return WINNER_CARD_COLORS[teamName];
   const team = TEAMS.find((t) => t.name === teamName);
   return team?.color ?? "#132e73";
+}
+
+export function winnerTeamMeta(teamName: string) {
+  if (WINNER_TEAM_META[teamName]) return WINNER_TEAM_META[teamName];
+  const team = TEAMS.find((t) => t.name === teamName);
+  if (team) {
+    return { short: team.short, logo: team.logo || `/teams/logos/${team.id}.png` };
+  }
+  return { short: teamName };
 }
 
 export const FAQS = [
