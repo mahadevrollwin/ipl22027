@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import { FaqList } from "@/components/FaqList";
 import { HeroVideos } from "@/components/HeroVideos";
 import { MatchCard } from "@/components/MatchCard";
@@ -123,10 +125,31 @@ export default async function HomePage() {
         </Wrap>
       </section>
 
-      <section className="bg-ipl ipl-rays py-12 text-white">
+      <section className="py-12">
         <Wrap>
-          <h2 className="text-[32px] font-extrabold">2026 winners</h2>
-          <p className="mt-3 max-w-[60ch] text-white/80">{settings.winnersIntro}</p>
+          <div className="flex flex-col-reverse overflow-hidden rounded-2xl bg-bg-3 md:flex-row-reverse">
+            <div className="relative aspect-video w-full shrink-0 md:aspect-auto md:min-h-[300px] md:w-1/2">
+              <Image
+                src="/news/final-recap.jpg"
+                alt="2026 winners Royal Challengers Bengaluru"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-1 flex-col justify-start gap-4 p-6 sm:p-8 md:p-10">
+              <h2 className="text-[28px] leading-tight font-semibold text-navy sm:text-[32px]">2026 winners</h2>
+              <p className="max-w-[54ch] text-[16px] leading-7 text-navy/80">{settings.winnersIntro}</p>
+              <div className="mt-auto flex flex-wrap items-center pt-2">
+                <Link
+                  href="/news/final-recap"
+                  className="inline-flex min-h-10 items-center justify-center rounded-full bg-ipl px-5 text-sm font-bold text-white transition hover:opacity-90"
+                >
+                  Match Report
+                </Link>
+              </div>
+            </div>
+          </div>
         </Wrap>
       </section>
 
