@@ -739,13 +739,70 @@ export const STATS_2026 = [
 ];
 
 export const AWARDS_2026 = [
-  { cap: "Orange Cap", name: "Vaibhav Sooryavanshi", team: "RR", stat: "776 runs · Avg 48.50 · SR 237.30" },
-  { cap: "Purple Cap", name: "Kagiso Rabada", team: "GT", stat: "29 wickets · Best 3/25" },
-  { cap: "MVP", name: "Vaibhav Sooryavanshi", team: "RR", stat: "436.55 points · 16 matches" },
-  { cap: "Highest score", name: "KL Rahul", team: "DC", stat: "152 vs PBKS · SR 226.86" },
-  { cap: "Fair Play", name: "Punjab Kings", team: "PBKS", stat: "Season award" },
-  { cap: "Player of the Final", name: "Virat Kohli", team: "RCB", stat: "75* off 42" },
+  {
+    cap: "Orange Cap",
+    name: "Vaibhav Sooryavanshi",
+    team: "RR",
+    stat: "776 runs · Avg 48.50 · SR 237.30",
+    image: "/teams/players/rr/vaibhav-suryavanshi.avif",
+    logo: "/teams/logos/rr.png",
+  },
+  {
+    cap: "Purple Cap",
+    name: "Kagiso Rabada",
+    team: "GT",
+    stat: "29 wickets · Best 3/25",
+    image: "/teams/players/gt/kagiso-rabada.avif",
+    logo: "/teams/logos/gt.png",
+  },
+  {
+    cap: "MVP",
+    name: "Vaibhav Sooryavanshi",
+    team: "RR",
+    stat: "436.55 points · 16 matches",
+    image: "/teams/players/rr/vaibhav-suryavanshi.avif",
+    logo: "/teams/logos/rr.png",
+  },
+  {
+    cap: "Highest score",
+    name: "KL Rahul",
+    team: "DC",
+    stat: "152 vs PBKS · SR 226.86",
+    image: "/teams/players/dc/kl-rahul.avif",
+    logo: "/teams/logos/dc.png",
+  },
+  {
+    cap: "Fair Play",
+    name: "Punjab Kings",
+    team: "PBKS",
+    stat: "Season award",
+    image: "/teams/logos/pbks.png",
+    logo: "/teams/logos/pbks.png",
+  },
+  {
+    cap: "Player of the Final",
+    name: "Virat Kohli",
+    team: "RCB",
+    stat: "75* off 42",
+    image: "/teams/players/rcb/virat-kohli.avif",
+    logo: "/teams/logos/rcb.png",
+  },
 ];
+
+/** Fill player/logo paths when Sanity awards omit media fields. */
+export function withAwardMedia<T extends { cap: string; name: string; team: string; stat: string; image?: string; logo?: string }>(
+  awards: T[],
+) {
+  const byCap = new Map(AWARDS_2026.map((a) => [a.cap, a]));
+  return awards.map((award) => {
+    const fallback = byCap.get(award.cap);
+    return {
+      ...award,
+      image: award.image || fallback?.image,
+      logo: award.logo || fallback?.logo,
+    };
+  });
+}
 
 export const WINNERS = [
   { year: 2026, team: "Royal Challengers Bengaluru" },

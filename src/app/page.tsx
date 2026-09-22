@@ -2,6 +2,7 @@ import { FaqList } from "@/components/FaqList";
 import { HeroVideos } from "@/components/HeroVideos";
 import { MatchCard } from "@/components/MatchCard";
 import { NewsCard } from "@/components/NewsCard";
+import { PerformerCard } from "@/components/PerformerCard";
 import { StandingsTable } from "@/components/StandingsTable";
 import { TeamTile } from "@/components/TeamTile";
 import { SectionHead, Wrap } from "@/components/ui";
@@ -18,6 +19,7 @@ import {
   getWinners,
   standingsFromTeams,
 } from "@/lib/cms";
+import { withAwardMedia } from "@/lib/data";
 
 export const revalidate = 60;
 
@@ -69,15 +71,9 @@ export default async function HomePage() {
       <section className="py-12">
         <Wrap>
           <SectionHead title="Top performers" />
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {awards.map((a) => (
-              <article key={a.cap} className="rounded-2xl bg-white p-5 shadow-sm">
-                <div className="text-xs font-bold tracking-[0.16em] text-ipl uppercase">{a.cap}</div>
-                <h3 className="mt-2 text-2xl font-extrabold text-navy">{a.name}</h3>
-                <p className="mt-1 text-sm text-muted">
-                  {a.team} · {a.stat}
-                </p>
-              </article>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {withAwardMedia(awards).map((a) => (
+              <PerformerCard key={a.cap} award={a} />
             ))}
           </div>
         </Wrap>
