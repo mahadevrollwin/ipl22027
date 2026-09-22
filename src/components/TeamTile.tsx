@@ -8,11 +8,11 @@ export function TeamTile({ team }: { team: Team }) {
   return (
     <Link
       href={`/teams/${team.id}`}
-      className="relative flex min-h-[170px] flex-col justify-between overflow-hidden rounded-2xl p-[18px] text-white"
+      className="relative flex min-h-[170px] flex-col justify-between overflow-hidden rounded-2xl bg-[#120e0b] p-[18px] text-white"
     >
       <div
         aria-hidden
-        className="absolute inset-0 opacity-[0.72]"
+        className="absolute inset-0 opacity-[0.82]"
         style={{ background: `linear-gradient(160deg, ${team.color}, #120e0b 78%)` }}
       />
       <div aria-hidden className="absolute inset-0 bg-[#1a2338]/35" />
@@ -26,7 +26,7 @@ export function TeamTile({ team }: { team: Team }) {
           alt=""
           fill
           sizes="128px"
-          className="object-contain drop-shadow-[0_4px_12px_rgb(0_0_0_/_0.25)]"
+          className="object-contain"
         />
       </div>
 
