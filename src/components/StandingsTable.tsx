@@ -20,7 +20,7 @@ export type StandingRow = {
 export function StandingsTable({ rows }: { rows: StandingRow[] }) {
   return (
     <div className="overflow-x-auto rounded-[22px] border border-line bg-bg-2">
-      <table className="w-full min-w-[780px] border-collapse text-sm">
+      <table className="standings-table w-full min-w-[780px] border-collapse text-sm">
         <thead>
           <tr>
             {["#", "Team", "P", "W", "L", "NR", "NRR", "Pts", "Form"].map((h) => (
