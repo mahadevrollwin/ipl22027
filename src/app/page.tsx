@@ -19,7 +19,7 @@ import {
   getWinners,
   standingsFromTeams,
 } from "@/lib/cms";
-import { withAwardMedia } from "@/lib/data";
+import { withAwardMedia, winnerCardColor } from "@/lib/data";
 
 export const revalidate = 60;
 
@@ -135,9 +135,13 @@ export default async function HomePage() {
           <SectionHead title="Past winners" />
           <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4 lg:grid-cols-8">
             {winners.map((w) => (
-              <article key={w.year} className="min-h-[88px] rounded-2xl bg-white p-3 shadow-sm">
-                <b className="block text-sm text-ipl">{w.year}</b>
-                <span className="text-[13px] font-bold">{w.team}</span>
+              <article
+                key={w.year}
+                className="min-h-[88px] rounded-2xl p-3 text-white shadow-sm"
+                style={{ backgroundColor: winnerCardColor(w.team) }}
+              >
+                <b className="block text-sm text-white/90">{w.year}</b>
+                <span className="text-[13px] font-bold text-white">{w.team}</span>
               </article>
             ))}
           </div>

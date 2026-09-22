@@ -826,6 +826,24 @@ export const WINNERS = [
   { year: 2008, team: "Rajasthan Royals" },
 ];
 
+/** Card backgrounds for Past winners — brand-aligned, tuned for white text. */
+const WINNER_CARD_COLORS: Record<string, string> = {
+  "Royal Challengers Bengaluru": "#c8102e",
+  "Kolkata Knight Riders": "#3b0a45",
+  "Chennai Super Kings": "#a86f00",
+  "Gujarat Titans": "#1c3c78",
+  "Mumbai Indians": "#004ba0",
+  "Sunrisers Hyderabad": "#c44f12",
+  "Deccan Chargers": "#1a1a1a",
+  "Rajasthan Royals": "#c4166e",
+};
+
+export function winnerCardColor(teamName: string) {
+  if (WINNER_CARD_COLORS[teamName]) return WINNER_CARD_COLORS[teamName];
+  const team = TEAMS.find((t) => t.name === teamName);
+  return team?.color ?? "#132e73";
+}
+
 export const FAQS = [
   { q: "What is IPL 2027?", a: "IPL 2027 is the 20th season of the Indian Premier League, a professional T20 competition run by the BCCI with ten city franchises." },
   { q: "When does IPL 2027 start?", a: "The official fixture list is not out yet. Recent seasons have opened in late March. This site uses 27 March 2027 as a working marker until BCCI confirms dates." },
