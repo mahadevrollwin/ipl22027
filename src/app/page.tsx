@@ -150,8 +150,10 @@ export default async function HomePage() {
 
       <section className="bg-white py-12">
         <Wrap>
-          <SectionHead title="Questions" href="/about" />
-          <FaqList items={faqs.slice(0, 6)} />
+          <div className="mx-auto w-full max-w-[760px]">
+            <SectionHead title="Questions" href="/about" />
+            <FaqList items={faqs.slice(0, 6)} />
+          </div>
         </Wrap>
       </section>
     </>
