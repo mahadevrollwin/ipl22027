@@ -59,17 +59,30 @@ export default async function HomePage() {
         </Wrap>
       </section>
 
-      <section className="bg-white py-12">
+      <section className="relative overflow-hidden bg-white py-12">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-ipl/20 to-transparent"
+        />
         <Wrap>
           <SectionHead
             title="2026 season in numbers"
             subtitle="The season RCB retained the cup — and a teenager took the Orange Cap."
           />
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-6">
             {stats.map((s) => (
-              <article key={s.k} className="rounded-2xl bg-bg p-4">
-                <span className="text-xs font-bold tracking-wider text-muted uppercase">{s.k}</span>
-                <strong className="mt-2 block text-3xl font-extrabold text-ipl">{s.v}</strong>
+              <article
+                key={s.k}
+                className="group relative overflow-hidden rounded-2xl border border-line bg-gradient-to-b from-white to-bg-3/80 p-4 shadow-[0_6px_18px_rgb(19_46_115_/_0.05)] transition duration-300 hover:-translate-y-0.5 hover:border-ipl/25 hover:shadow-[0_12px_28px_rgb(19_46_115_/_0.1)] sm:p-5"
+              >
+                <span
+                  aria-hidden
+                  className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-ipl via-gold to-ipl opacity-80"
+                />
+                <span className="text-[11px] font-bold tracking-[0.14em] text-muted uppercase">{s.k}</span>
+                <strong className="mt-2.5 block text-[28px] leading-none font-extrabold text-navy sm:text-3xl">
+                  {s.v}
+                </strong>
               </article>
             ))}
           </div>
