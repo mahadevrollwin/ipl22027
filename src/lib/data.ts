@@ -845,7 +845,7 @@ const WINNER_TEAM_META: Record<string, { short: string; logo?: string }> = {
   "Gujarat Titans": { short: "GT", logo: "/teams/logos/gt.png" },
   "Mumbai Indians": { short: "MI", logo: "/teams/logos/mi.png" },
   "Sunrisers Hyderabad": { short: "SRH", logo: "/teams/logos/srh.png" },
-  "Deccan Chargers": { short: "DC" },
+  "Deccan Chargers": { short: "DC", logo: "/teams/logos/deccan-chargers.png" },
   "Rajasthan Royals": { short: "RR", logo: "/teams/logos/rr.png" },
 };
 
