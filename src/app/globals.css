@@ -89,13 +89,11 @@ body {
   animation: team-card-in 0.45s ease both;
 }
 
-/* Points table: alternating column backgrounds */
-.standings-table th:nth-child(odd),
-.standings-table td:nth-child(odd) {
+/* Points table: alternating row backgrounds */
+.standings-table tbody tr:nth-child(odd) td {
   background-color: #ffffff;
 }
 
-.standings-table th:nth-child(even),
-.standings-table td:nth-child(even) {
+.standings-table tbody tr:nth-child(even) td {
   background-color: #f0f1f3;
 }
