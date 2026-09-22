@@ -340,6 +340,7 @@ export function standingsFromTeams(teams: Team[]) {
       short: team.short,
       name: team.name,
       color: team.color,
+      logo: team.logo || `/teams/logos/${team.id}.png`,
       qualified: team.record2026.pos <= 4,
     }))
     .sort((a, b) => a.pos - b.pos);
