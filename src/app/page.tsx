@@ -136,10 +136,10 @@ export default async function HomePage() {
           <div className="flex flex-col-reverse overflow-hidden rounded-2xl bg-bg-3 md:flex-row-reverse">
             <div className="relative aspect-video w-full shrink-0 md:aspect-auto md:min-h-[300px] md:w-1/2">
               <Image
-                src={championsBlog?.coverUrl || "/news/final-recap.jpg"}
+                src="/news/three-peat.jpg"
                 alt="RCB 2026 IPL Champions: A Historic Back-to-Back Triumph"
                 fill
-                sizes="(min-width: 768px) 50vw, 100vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
