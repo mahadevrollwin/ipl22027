@@ -14,12 +14,14 @@ export const video = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: "file",
+      name: "videoFile",
       title: "Video upload",
       type: "file",
-      description: "Upload an MP4 or WebM from your computer. Stored as a Sanity asset and plays on the site with audio.",
+      description:
+        "Upload an MP4 or WebM from your computer. Sanity stores the file and the website plays it with audio automatically.",
       options: {
         accept: "video/mp4,video/webm,.mp4,.webm",
+        storeOriginalFilename: true,
       },
     }),
     defineField({
@@ -27,11 +29,11 @@ export const video = defineType({
       title: "Watch URL",
       type: "url",
       description:
-        "Optional YouTube / official IPL / external link. Used when no video file is uploaded. Existing entries keep working.",
+        "Optional YouTube / official IPL / external link. Used only when no video file is uploaded.",
       validation: (Rule) =>
         Rule.uri({ scheme: ["http", "https"] }).custom((href, context) => {
-          const parent = context.parent as { file?: { asset?: { _ref?: string } } } | undefined;
-          const hasFile = Boolean(parent?.file?.asset?._ref);
+          const parent = context.parent as { videoFile?: { asset?: { _ref?: string } } } | undefined;
+          const hasFile = Boolean(parent?.videoFile?.asset?._ref);
           if (!href && !hasFile) {
             return "Upload a video file or provide a Watch URL";
           }
