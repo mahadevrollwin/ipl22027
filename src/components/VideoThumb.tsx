@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { getPreviewSeekTime } from "@/lib/video";
 
 type VideoThumbProps = {
@@ -11,11 +11,11 @@ type VideoThumbProps = {
 };
 
 /**
- * Card/list thumbnail: prefers Sanity poster, otherwise captures a mid-opening frame.
- * The throwaway capture element may be muted; real players never are.
+ * Card thumbnail from Sanity poster, or a one-off off-DOM frame capture.
+ * Never mounts a muted <video> in the page (that can silence the real player
+ * when both share the same CDN URL).
  */
 export function VideoThumb({ src, poster, className, alt = "" }: VideoThumbProps) {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [frameUrl, setFrameUrl] = useState<string | undefined>(poster);
 
   useEffect(() => {
@@ -23,46 +23,64 @@ export function VideoThumb({ src, poster, className, alt = "" }: VideoThumbProps
   }, [poster]);
 
   useEffect(() => {
-    if (poster || !src) return;
-    const video = videoRef.current;
-    if (!video) return;
+    if (poster || !src || typeof window === "undefined") return;
 
     let cancelled = false;
+    const video = document.createElement("video");
+    video.preload = "auto";
+    video.muted = true;
+    video.playsInline = true;
+    video.crossOrigin = "anonymous";
+    // Distinct URL so Chrome does not reuse the main player's media pipeline.
+    const separator = src.includes("?") ? "&" : "?";
+    video.src = `${src}${separator}preview=1`;
 
-    const seekPreview = () => {
-      if (cancelled || video.readyState < 1) return;
-      try {
-        video.currentTime = getPreviewSeekTime(video.duration);
-      } catch {
-        // ignore
-      }
+    const cleanup = () => {
+      video.removeEventListener("loadedmetadata", onMeta);
+      video.removeEventListener("seeked", onSeeked);
+      video.src = "";
+      video.load();
     };
 
-    const capture = () => {
-      if (cancelled || !video.videoWidth) return;
+    const onSeeked = () => {
+      if (cancelled || !video.videoWidth) {
+        cleanup();
+        return;
+      }
       try {
         const canvas = document.createElement("canvas");
         canvas.width = video.videoWidth;
         canvas.height = video.videoHeight;
         const ctx = canvas.getContext("2d");
-        if (!ctx) return;
+        if (!ctx) {
+          cleanup();
+          return;
+        }
         ctx.drawImage(video, 0, 0);
         const url = canvas.toDataURL("image/jpeg", 0.85);
         if (!cancelled) setFrameUrl(url);
       } catch {
-        // Cross-origin block — keep the paused video frame as the preview.
+        // CORS / empty frame — keep gradient fallback.
+      } finally {
+        cleanup();
       }
     };
 
-    video.addEventListener("loadedmetadata", seekPreview);
-    video.addEventListener("seeked", capture);
-    if (video.readyState >= 1) seekPreview();
-    else video.load();
+    const onMeta = () => {
+      try {
+        video.currentTime = getPreviewSeekTime(video.duration);
+      } catch {
+        cleanup();
+      }
+    };
+
+    video.addEventListener("loadedmetadata", onMeta);
+    video.addEventListener("seeked", onSeeked);
+    video.load();
 
     return () => {
       cancelled = true;
-      video.removeEventListener("loadedmetadata", seekPreview);
-      video.removeEventListener("seeked", capture);
+      cleanup();
     };
   }, [src, poster]);
 
@@ -71,21 +89,10 @@ export function VideoThumb({ src, poster, className, alt = "" }: VideoThumbProps
     return <img src={frameUrl} alt={alt} className={className} />;
   }
 
-  if (!src) {
-    return <span className={`bg-[linear-gradient(135deg,#19398a,#0c1f5c)] ${className || ""}`} aria-hidden />;
-  }
-
   return (
-    <video
-      ref={videoRef}
-      src={src}
-      crossOrigin="anonymous"
-      muted
-      playsInline
-      preload="auto"
-      className={className}
+    <span
+      className={`block bg-[linear-gradient(135deg,#19398a,#0c1f5c)] ${className || ""}`}
       aria-hidden
-      tabIndex={-1}
     />
   );
 }
