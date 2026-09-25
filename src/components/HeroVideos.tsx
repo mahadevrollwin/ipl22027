@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Video } from "@/lib/data";
-import { getPlayableVideoSrc } from "@/lib/video";
+import { VideoPlayer } from "@/components/VideoPlayer";
+import { VideoThumb } from "@/components/VideoThumb";
+import { getPlayableVideoSrc, getVideoPath } from "@/lib/video";
 
 export function HeroVideos({ videos }: { videos: Video[] }) {
   const featured = videos.find((video) => video.featured) ?? videos[0];
@@ -14,13 +16,11 @@ export function HeroVideos({ videos }: { videos: Video[] }) {
       <div className="mx-auto grid w-[min(1180px,calc(100%-40px))] gap-6 py-8 lg:grid-cols-[1.4fr_0.9fr]">
         {featuredSrc ? (
           <div className="relative min-h-[340px] overflow-hidden rounded-2xl bg-[#0c1f5c]">
-            <video
-              controls
-              playsInline
-              preload="metadata"
-              poster={featured.thumbUrl}
-              className="absolute inset-0 h-full w-full object-contain"
+            <VideoPlayer
               src={featuredSrc}
+              poster={featured.thumbUrl}
+              showInterestingFrame
+              className="absolute inset-0 h-full w-full object-contain"
             />
             <div className="pointer-events-none absolute right-0 bottom-0 left-0 bg-[linear-gradient(180deg,transparent,rgb(8_20_60/0.92))] p-6 text-white">
               <p className="text-sm font-semibold text-gold">
@@ -63,7 +63,7 @@ export function HeroVideos({ videos }: { videos: Video[] }) {
         <div className="flex flex-col justify-center gap-4">
           {rest.slice(0, 4).map((v) => {
             const playable = Boolean(getPlayableVideoSrc(v));
-            const linkHref = playable ? "/videos" : v.href;
+            const linkHref = playable ? getVideoPath(v) : v.href;
             if (!linkHref) return null;
             return (
               <a
@@ -74,7 +74,13 @@ export function HeroVideos({ videos }: { videos: Video[] }) {
               >
                 <span className="text-[15px] leading-snug font-semibold">{v.title}</span>
                 <span className="relative h-[68px] overflow-hidden rounded-xl bg-[#0c1f5c]">
-                  {v.thumbUrl ? (
+                  {playable ? (
+                    <VideoThumb
+                      src={getPlayableVideoSrc(v)}
+                      poster={v.thumbUrl}
+                      className="absolute inset-0 h-full w-full object-cover"
+                    />
+                  ) : v.thumbUrl ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={v.thumbUrl} alt="" className="absolute inset-0 h-full w-full object-cover" />
                   ) : (

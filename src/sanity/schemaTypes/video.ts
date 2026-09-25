@@ -7,6 +7,13 @@ export const video = defineType({
   fields: [
     defineField({ name: "title", title: "Title", type: "string", validation: (Rule) => Rule.required() }),
     defineField({
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: { source: "title", maxLength: 96 },
+      description: "Used for the video page URL (/videos/your-slug). Click Generate from title.",
+    }),
+    defineField({
       name: "meta",
       title: "Meta",
       type: "string",
@@ -44,6 +51,7 @@ export const video = defineType({
       name: "thumbnail",
       title: "Thumbnail",
       type: "image",
+      description: "Optional. If empty, the site picks a preview frame from the video.",
       options: { hotspot: true },
     }),
     defineField({ name: "featured", title: "Featured in home hero", type: "boolean", initialValue: false }),

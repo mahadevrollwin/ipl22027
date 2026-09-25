@@ -14,6 +14,7 @@ import {
   getTeam as getStaticTeam,
 } from "@/lib/data";
 import { enrichTeam, enrichTeams } from "@/lib/teamEnrich";
+import { getVideoSlug, slugifyVideoTitle } from "@/lib/video";
 import { client } from "@/sanity/client";
 import { isSanityConfigured } from "@/sanity/env";
 import {
@@ -28,6 +29,7 @@ import {
   teamBySlugQuery,
   teamsQuery,
   videosQuery,
+  videoBySlugQuery,
   winnersQuery,
 } from "@/sanity/queries";
 
@@ -285,15 +287,30 @@ export async function getArticleBySlug(id: string): Promise<Article | undefined>
 export async function getVideos() {
   const docs = await fetchSanity<Video[]>(videosQuery);
   if (!docs?.length) return VIDEOS;
-  return docs.map((doc) => ({
-    title: doc.title,
+  return docs.map(mapVideo);
+}
+
+export async function getVideoBySlug(slug: string): Promise<Video | undefined> {
+  const doc = await fetchSanity<Video>(videoBySlugQuery, { slug });
+  if (doc?.title) return mapVideo(doc);
+  const all = await getVideos();
+  return all.find((video) => getVideoSlug(video) === slug);
+}
+
+function mapVideo(doc: Video): Video {
+  const title = doc.title;
+  const slug = doc.slug || slugifyVideoTitle(title);
+  return {
+    id: doc.id || slug,
+    title,
+    slug,
     meta: doc.meta,
     href: doc.href || "",
     videoUrl: doc.videoUrl || null,
     videoMimeType: doc.videoMimeType || null,
     featured: Boolean(doc.featured),
     thumbUrl: doc.thumbUrl || undefined,
-  }));
+  };
 }
 
 export async function getTeams(): Promise<Team[]> {

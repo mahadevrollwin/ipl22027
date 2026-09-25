@@ -44,7 +44,21 @@ export const articleBySlugQuery = `*[_type == "article" && slug.current == $slug
 }`;
 
 export const videosQuery = `*[_type == "video"] | order(order asc, _createdAt desc){
+  "id": coalesce(slug.current, _id),
   title,
+  "slug": slug.current,
+  meta,
+  href,
+  featured,
+  "thumbUrl": thumbnail.asset->url,
+  "videoUrl": coalesce(videoFile.asset->url, file.asset->url),
+  "videoMimeType": coalesce(videoFile.asset->mimeType, file.asset->mimeType)
+}`;
+
+export const videoBySlugQuery = `*[_type == "video" && (slug.current == $slug || _id == $slug)][0]{
+  "id": coalesce(slug.current, _id),
+  title,
+  "slug": slug.current,
   meta,
   href,
   featured,
