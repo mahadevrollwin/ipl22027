@@ -1,3 +1,5 @@
+import { isDirectVideoUrl } from "@/lib/video";
+
 export function VideoCard({
   title,
   meta,
@@ -9,6 +11,32 @@ export function VideoCard({
   href: string;
   thumbUrl?: string;
 }) {
+  if (isDirectVideoUrl(href)) {
+    return (
+      <article className="overflow-hidden rounded-2xl bg-white shadow-sm">
+        <div className="relative overflow-hidden bg-[linear-gradient(135deg,#19398A,#0C1F5C)]">
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster={thumbUrl}
+            className="aspect-video h-auto w-full bg-black object-contain"
+            src={href}
+          >
+            <track kind="captions" />
+          </video>
+          <span className="pointer-events-none absolute right-2 bottom-2 rounded bg-black/70 px-1.5 text-[10px] font-bold text-white">
+            {meta.split(" · ")[0]}
+          </span>
+        </div>
+        <div className="p-3.5">
+          <h3 className="text-[15px] leading-snug font-bold text-navy">{title}</h3>
+          <p className="mt-1 text-xs font-semibold text-faint">{meta}</p>
+        </div>
+      </article>
+    );
+  }
+
   return (
     <a
       href={href}

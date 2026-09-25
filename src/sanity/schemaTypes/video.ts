@@ -17,7 +17,8 @@ export const video = defineType({
       name: "href",
       title: "Watch URL",
       type: "url",
-      description: "Official IPL / YouTube link. Do not upload copyrighted match film.",
+      description:
+        "YouTube / official IPL link, or a direct .mp4 URL on this site (e.g. https://ipl22027.vercel.app/videos/your-file.mp4). Direct video files play inline.",
       validation: (Rule) => Rule.required().uri({ scheme: ["http", "https"] }),
     }),
     defineField({
