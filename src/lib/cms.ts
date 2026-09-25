@@ -1,4 +1,4 @@
-import type { Article, Match, NewsHero, Team } from "@/lib/data";
+import type { Article, Match, NewsHero, Team, Video } from "@/lib/data";
 import {
   AWARDS_2026,
   FAQS,
@@ -283,8 +283,17 @@ export async function getArticleBySlug(id: string): Promise<Article | undefined>
 }
 
 export async function getVideos() {
-  const docs = await fetchSanity<typeof VIDEOS>(videosQuery);
-  return docs?.length ? docs : VIDEOS;
+  const docs = await fetchSanity<Video[]>(videosQuery);
+  if (!docs?.length) return VIDEOS;
+  return docs.map((doc) => ({
+    title: doc.title,
+    meta: doc.meta,
+    href: doc.href || "",
+    videoUrl: doc.videoUrl || null,
+    videoMimeType: doc.videoMimeType || null,
+    featured: Boolean(doc.featured),
+    thumbUrl: doc.thumbUrl || undefined,
+  }));
 }
 
 export async function getTeams(): Promise<Team[]> {

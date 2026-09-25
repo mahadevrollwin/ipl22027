@@ -48,7 +48,9 @@ export const videosQuery = `*[_type == "video"] | order(order asc, _createdAt de
   meta,
   href,
   featured,
-  "thumbUrl": thumbnail.asset->url
+  "thumbUrl": thumbnail.asset->url,
+  "videoUrl": file.asset->url,
+  "videoMimeType": file.asset->mimeType
 }`;
 
 export const teamsQuery = `*[_type == "team" && defined(slug.current)] | order(record2026.pos asc){

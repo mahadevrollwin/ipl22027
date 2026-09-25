@@ -14,12 +14,29 @@ export const video = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: "file",
+      title: "Video upload",
+      type: "file",
+      description: "Upload an MP4 or WebM from your computer. Stored as a Sanity asset and plays on the site with audio.",
+      options: {
+        accept: "video/mp4,video/webm,.mp4,.webm",
+      },
+    }),
+    defineField({
       name: "href",
       title: "Watch URL",
       type: "url",
       description:
-        "YouTube / official IPL link, or a direct .mp4 URL on this site (e.g. https://ipl22027.vercel.app/videos/your-file.mp4). Direct video files play inline.",
-      validation: (Rule) => Rule.required().uri({ scheme: ["http", "https"] }),
+        "Optional YouTube / official IPL / external link. Used when no video file is uploaded. Existing entries keep working.",
+      validation: (Rule) =>
+        Rule.uri({ scheme: ["http", "https"] }).custom((href, context) => {
+          const parent = context.parent as { file?: { asset?: { _ref?: string } } } | undefined;
+          const hasFile = Boolean(parent?.file?.asset?._ref);
+          if (!href && !hasFile) {
+            return "Upload a video file or provide a Watch URL";
+          }
+          return true;
+        }),
     }),
     defineField({
       name: "thumbnail",

@@ -680,7 +680,11 @@ export const NEWS: Article[] = [
 export type Video = {
   title: string;
   meta: string;
-  href: string;
+  /** External watch link (YouTube / IPL / etc.). Used when no Sanity upload exists. */
+  href?: string;
+  /** Sanity CDN URL for an uploaded MP4/WebM asset. */
+  videoUrl?: string | null;
+  videoMimeType?: string | null;
   featured?: boolean;
   thumbUrl?: string;
 };

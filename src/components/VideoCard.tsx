@@ -1,17 +1,21 @@
-import { isDirectVideoUrl } from "@/lib/video";
+import { getPlayableVideoSrc } from "@/lib/video";
 
 export function VideoCard({
   title,
   meta,
-  href,
+  href = "",
   thumbUrl,
+  videoUrl,
 }: {
   title: string;
   meta: string;
-  href: string;
+  href?: string;
   thumbUrl?: string;
+  videoUrl?: string | null;
 }) {
-  if (isDirectVideoUrl(href)) {
+  const src = getPlayableVideoSrc({ videoUrl, href });
+
+  if (src) {
     return (
       <article className="overflow-hidden rounded-2xl bg-white shadow-sm">
         <div className="relative overflow-hidden bg-[linear-gradient(135deg,#19398A,#0C1F5C)]">
@@ -21,10 +25,8 @@ export function VideoCard({
             preload="metadata"
             poster={thumbUrl}
             className="aspect-video h-auto w-full bg-black object-contain"
-            src={href}
-          >
-            <track kind="captions" />
-          </video>
+            src={src}
+          />
           <span className="pointer-events-none absolute right-2 bottom-2 rounded bg-black/70 px-1.5 text-[10px] font-bold text-white">
             {meta.split(" · ")[0]}
           </span>
@@ -36,6 +38,8 @@ export function VideoCard({
       </article>
     );
   }
+
+  if (!href) return null;
 
   return (
     <a
