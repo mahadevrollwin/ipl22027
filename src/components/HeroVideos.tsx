@@ -60,7 +60,7 @@ export function HeroVideos({ videos }: { videos: Video[] }) {
             </div>
           </a>
         ) : null}
-        <div className="flex flex-col justify-center gap-4">
+        <div className="flex flex-col justify-center gap-4 rounded-2xl bg-white/10 p-4 ring-1 ring-white/15 backdrop-blur-[2px] sm:p-5">
           {rest.slice(0, 4).map((v) => {
             const playable = Boolean(getPlayableVideoSrc(v));
             const linkHref = playable ? getVideoPath(v) : v.href;
