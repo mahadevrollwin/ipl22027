@@ -59,6 +59,17 @@ export default async function HomePage() {
         </Wrap>
       </section>
 
+      <section className="bg-white py-12">
+        <Wrap>
+          <SectionHead
+            title="Points table"
+            subtitle="IPL 2027 standings will replace this table after Match 1."
+            href="/points-table"
+          />
+          <StandingsTable rows={standingsFromTeams(teams)} />
+        </Wrap>
+      </section>
+
       <section className="relative overflow-hidden bg-white py-12">
         <div
           aria-hidden
@@ -97,17 +108,6 @@ export default async function HomePage() {
               <PerformerCard key={a.cap} award={a} />
             ))}
           </div>
-        </Wrap>
-      </section>
-
-      <section className="bg-white py-12">
-        <Wrap>
-          <SectionHead
-            title="Points table"
-            subtitle="IPL 2027 standings will replace this table after Match 1."
-            href="/points-table"
-          />
-          <StandingsTable rows={standingsFromTeams(teams)} />
         </Wrap>
       </section>
 
