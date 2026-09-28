@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import type { OrangeCapPlayer, PurpleCapPlayer } from "@/lib/data";
-import { Wrap } from "@/components/ui";
+import { SectionHead, Wrap } from "@/components/ui";
 
 function PlayerPhoto({ name, image }: { name: string; image?: string }) {
   const initials = name
@@ -141,6 +141,10 @@ export function CapLeaders({
   return (
     <section className="py-12">
       <Wrap>
+        <SectionHead
+          title="Race for the Caps"
+          subtitle="The batters and bowlers who owned IPL 2026 — Orange Cap firepower meet Purple Cap craft."
+        />
         <div className="grid gap-4 lg:grid-cols-2 lg:gap-5">
           <OrangeCapCard players={orange} />
           <PurpleCapCard players={purple} />

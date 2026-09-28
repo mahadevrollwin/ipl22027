@@ -830,6 +830,7 @@ export const ORANGE_CAP_2026: OrangeCapPlayer[] = [
     rank: 2,
     name: "Shubman Gill",
     team: "GT",
+    image: "/teams/players/gt/shubman-gill.avif",
     runs: 732,
     strikeRate: "163.02",
     average: "45.75",
