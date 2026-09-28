@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CapLeaders } from "@/components/CapLeaders";
 import { FaqList } from "@/components/FaqList";
 import { HeroVideos } from "@/components/HeroVideos";
 import { MatchCard } from "@/components/MatchCard";
@@ -21,7 +22,13 @@ import {
   getWinners,
   standingsFromTeams,
 } from "@/lib/cms";
-import { withAwardMedia, winnerCardColor, winnerTeamMeta } from "@/lib/data";
+import {
+  ORANGE_CAP_2026,
+  PURPLE_CAP_2026,
+  withAwardMedia,
+  winnerCardColor,
+  winnerTeamMeta,
+} from "@/lib/data";
 
 export const revalidate = 60;
 
@@ -69,6 +76,8 @@ export default async function HomePage() {
           <StandingsTable rows={standingsFromTeams(teams)} />
         </Wrap>
       </section>
+
+      <CapLeaders orange={ORANGE_CAP_2026} purple={PURPLE_CAP_2026} />
 
       <section className="relative overflow-hidden bg-white py-12">
         <div

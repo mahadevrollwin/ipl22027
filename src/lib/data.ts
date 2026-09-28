@@ -795,6 +795,123 @@ export const AWARDS_2026 = [
   },
 ];
 
+export type OrangeCapPlayer = {
+  rank: number;
+  name: string;
+  team: string;
+  image?: string;
+  runs: number;
+  strikeRate: string;
+  average: string;
+};
+
+export type PurpleCapPlayer = {
+  rank: number;
+  name: string;
+  team: string;
+  image?: string;
+  wickets: number;
+  economy: string;
+  best: string;
+};
+
+/** IPL 2026 final Orange Cap top 5. */
+export const ORANGE_CAP_2026: OrangeCapPlayer[] = [
+  {
+    rank: 1,
+    name: "Vaibhav Sooryavanshi",
+    team: "RR",
+    image: "/teams/players/rr/vaibhav-suryavanshi.avif",
+    runs: 776,
+    strikeRate: "237.30",
+    average: "48.50",
+  },
+  {
+    rank: 2,
+    name: "Shubman Gill",
+    team: "GT",
+    runs: 732,
+    strikeRate: "163.02",
+    average: "45.75",
+  },
+  {
+    rank: 3,
+    name: "Sai Sudharsan",
+    team: "GT",
+    image: "/teams/players/gt/sai-sudharsan.avif",
+    runs: 722,
+    strikeRate: "157.98",
+    average: "45.13",
+  },
+  {
+    rank: 4,
+    name: "Virat Kohli",
+    team: "RCB",
+    image: "/teams/players/rcb/virat-kohli.avif",
+    runs: 675,
+    strikeRate: "165.84",
+    average: "56.25",
+  },
+  {
+    rank: 5,
+    name: "Heinrich Klaasen",
+    team: "SRH",
+    image: "/teams/players/srh/heinrich-klaasen.avif",
+    runs: 624,
+    strikeRate: "160.00",
+    average: "48.00",
+  },
+];
+
+/** IPL 2026 final Purple Cap top 5. */
+export const PURPLE_CAP_2026: PurpleCapPlayer[] = [
+  {
+    rank: 1,
+    name: "Kagiso Rabada",
+    team: "GT",
+    image: "/teams/players/gt/kagiso-rabada.avif",
+    wickets: 29,
+    economy: "9.68",
+    best: "3/25",
+  },
+  {
+    rank: 2,
+    name: "Bhuvneshwar Kumar",
+    team: "RCB",
+    image: "/teams/players/rcb/bhuvneshwar-kumar.avif",
+    wickets: 28,
+    economy: "7.95",
+    best: "4/23",
+  },
+  {
+    rank: 3,
+    name: "Jofra Archer",
+    team: "RR",
+    image: "/teams/players/rr/jofra-archer.avif",
+    wickets: 25,
+    economy: "9.31",
+    best: "3/17",
+  },
+  {
+    rank: 4,
+    name: "Rashid Khan",
+    team: "GT",
+    image: "/teams/players/gt/rashid-khan.avif",
+    wickets: 21,
+    economy: "9.07",
+    best: "4/33",
+  },
+  {
+    rank: 5,
+    name: "Anshul Kamboj",
+    team: "CSK",
+    image: "/teams/players/csk/anshul-kamboj.avif",
+    wickets: 21,
+    economy: "10.52",
+    best: "3/22",
+  },
+];
+
 /** Fill player/logo paths when Sanity awards omit media fields. */
 export function withAwardMedia<T extends { cap: string; name: string; team: string; stat: string; image?: string; logo?: string }>(
   awards: T[],
