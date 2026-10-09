@@ -30,6 +30,41 @@ export const articlesQuery = `*[_type == "article" && defined(slug.current)] | o
   body
 }`;
 
+/** Published articles for sitemap — drafts excluded via client perspective + GROQ. */
+export const sitemapArticlesQuery = `*[
+  _type == "article" &&
+  !(_id in path("drafts.**")) &&
+  defined(slug.current) &&
+  slug.current != "" &&
+  defined(publishedAt) &&
+  defined(cover.asset)
+]{
+  "slug": slug.current,
+  publishedAt,
+  _updatedAt
+}`;
+
+export const sitemapVideosQuery = `*[
+  _type == "video" &&
+  !(_id in path("drafts.**")) &&
+  (defined(slug.current) || defined(title))
+]{
+  "slug": slug.current,
+  title,
+  _updatedAt,
+  _createdAt
+}`;
+
+export const sitemapTeamsQuery = `*[
+  _type == "team" &&
+  !(_id in path("drafts.**")) &&
+  defined(slug.current) &&
+  slug.current != ""
+]{
+  "slug": slug.current,
+  _updatedAt
+}`;
+
 export const articleBySlugQuery = `*[_type == "article" && slug.current == $slug][0]{
   "id": slug.current,
   title,
