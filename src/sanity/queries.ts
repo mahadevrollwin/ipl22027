@@ -36,12 +36,12 @@ export const sitemapArticlesQuery = `*[
   !(_id in path("drafts.**")) &&
   defined(slug.current) &&
   slug.current != "" &&
-  defined(publishedAt) &&
-  defined(cover.asset)
-]{
+  defined(publishedAt)
+] | order(publishedAt desc) {
   "slug": slug.current,
   publishedAt,
-  _updatedAt
+  _updatedAt,
+  "hasCover": defined(cover.asset)
 }`;
 
 export const sitemapVideosQuery = `*[
