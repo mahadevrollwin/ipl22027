@@ -65,6 +65,17 @@ export const sitemapTeamsQuery = `*[
   _updatedAt
 }`;
 
+/** CMS page docs map onto fixed App Router paths (home → /, points-table → /points-table, …). */
+export const sitemapPagesQuery = `*[
+  _type == "page" &&
+  !(_id in path("drafts.**")) &&
+  defined(slug.current) &&
+  slug.current != ""
+]{
+  "slug": slug.current,
+  _updatedAt
+}`;
+
 export const articleBySlugQuery = `*[_type == "article" && slug.current == $slug][0]{
   "id": slug.current,
   title,
