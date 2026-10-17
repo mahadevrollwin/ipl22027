@@ -42,7 +42,17 @@ export function Footer() {
           </Link>
         </div>
         <div>
-          <h3 className="mb-3 text-sm font-bold">Official</h3>
+          <h3 className="mb-3 text-sm font-bold">Legal</h3>
+          <Link className="my-1.5 block text-sm text-white/75 hover:text-white" href="/contact">
+            Contact Us
+          </Link>
+          <Link className="my-1.5 block text-sm text-white/75 hover:text-white" href="/terms">
+            Terms and Conditions
+          </Link>
+          <Link className="my-1.5 block text-sm text-white/75 hover:text-white" href="/privacy">
+            Privacy Policy
+          </Link>
+          <h3 className="mt-6 mb-3 text-sm font-bold">Official</h3>
           <a
             className="my-1.5 block text-sm text-white/75 hover:text-white"
             href="https://www.iplt20.com/"

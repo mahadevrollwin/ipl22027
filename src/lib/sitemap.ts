@@ -119,6 +119,9 @@ export async function buildSitemapEntries(): Promise<SitemapEntry[]> {
     { path: "/teams", changefreq: "weekly", priority: "0.9" },
     { path: "/points-table", changefreq: "weekly", priority: "0.9" },
     { path: "/about", changefreq: "monthly", priority: "0.9" },
+    { path: "/contact", changefreq: "yearly", priority: "0.5" },
+    { path: "/terms", changefreq: "yearly", priority: "0.4" },
+    { path: "/privacy", changefreq: "yearly", priority: "0.4" },
   ];
 
   for (const page of staticPages) {
