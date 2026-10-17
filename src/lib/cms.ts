@@ -132,12 +132,12 @@ const PAGE_FALLBACKS: Record<string, PageContent> = {
   },
   about: {
     slug: "about",
-    kicker: "Companion",
-    title: "About this site.",
-    lede: "IPL 2027 Live is an unofficial fan website — rebuilt for Season 20 with Next.js, Tailwind, and Sanity. It is not operated by BCCI.",
-    seoTitle: "About",
+    kicker: "About",
+    title: "About Us",
+    lede: "Your destination for the latest news, updates, and information about IPL 2027.",
+    seoTitle: "About Us",
     seoDescription:
-      "About IPL 2027 Live, an unofficial Season 20 companion. FAQ on dates, teams, playoffs, auction and broadcast.",
+      "About IPL2027.co — independent IPL 2027 news, updates, teams, auction coverage, and fan information. Not affiliated with BCCI.",
   },
 };
 

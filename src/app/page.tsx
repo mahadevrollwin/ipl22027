@@ -224,7 +224,7 @@ export default async function HomePage() {
       <section className="bg-white py-12">
         <Wrap>
           <div className="mx-auto w-full max-w-[760px]">
-            <SectionHead title="Questions" href="/about" />
+            <SectionHead title="Questions" />
             <FaqList items={faqs.slice(0, 6)} />
           </div>
         </Wrap>

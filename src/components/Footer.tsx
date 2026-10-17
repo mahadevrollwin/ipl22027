@@ -38,7 +38,7 @@ export function Footer() {
             Auction
           </Link>
           <Link className="my-1.5 block text-sm text-white/75 hover:text-white" href="/about">
-            About & FAQ
+            About Us
           </Link>
         </div>
         <div>
