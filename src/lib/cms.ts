@@ -82,62 +82,63 @@ const PAGE_FALLBACKS: Record<string, PageContent> = {
     kicker: "Desk",
     title: "Newsroom.",
     lede: "Auction, rules, and the hangover from a two-title RCB run.",
-    seoTitle: "News",
+    seoTitle: "IPL 2027 News: Latest Updates, Trades & Auction",
     seoDescription:
-      "IPL 2027 news: mini-auction returning to India, Impact Player review, RCB title defence and 2026 recap.",
+      "Get the latest IPL 2027 news, player trades, team updates, coaching changes, auction news, and breaking Indian Premier League headlines.",
   },
   blogs: {
     slug: "blogs",
     kicker: "Long read",
     title: "Blogs.",
     lede: "Longer Season 20 notes — records, title defence, and the road to the mini-auction.",
-    seoTitle: "Blogs",
-    seoDescription: "IPL 2027 blogs and long reads: Orange Cap, Season 20 preview, and title-race analysis.",
+    seoTitle: "IPL 2027 Blogs: Latest Cricket News, Analysis & Updates",
+    seoDescription:
+      "Read the latest IPL 2027 blogs featuring cricket news, team updates, player analysis, auction insights, match previews, and expert opinions.",
   },
   videos: {
     slug: "videos",
     kicker: "Watch",
     title: "Video hub.",
     lede: "Highlights live on the official IPL channels. We point you there instead of hosting copyrighted match film.",
-    seoTitle: "Videos",
+    seoTitle: "IPL 2027 Videos: Cricket Highlights & Star Players",
     seoDescription:
-      "Watch IPL highlights on official channels. Video hub for 2026 magic moments, the final, Orange Cap sixes and Purple Cap wickets.",
+      "Explore IPL 2027 videos featuring cricket highlights, star players, team promos, and memorable IPL moments. Watch videos from official IPL channels.",
   },
   matches: {
     slug: "matches",
     kicker: "Fixtures",
     title: "Match centre.",
     lede: "The IPL 2027 almanac is not public yet. Use the 2026 playoffs and a slice of last season while we wait for official dates.",
-    seoTitle: "Matches",
+    seoTitle: "IPL 2027 Matches: Schedule, Fixtures & Results",
     seoDescription:
-      "IPL 2027 fixtures will appear when BCCI publishes the almanac. Until then, browse the 2026 playoffs and selected league results.",
+      "Check the IPL 2027 matches schedule, fixtures, match dates, timings, venues, live scores, and results. Stay updated on every IPL game.",
   },
   teams: {
     slug: "teams",
     kicker: "Franchises",
     title: "All 10 teams.",
     lede: "Letter-mark tiles, 2026 records, and names to watch before the mini-auction. Full squads land after retentions.",
-    seoTitle: "Teams",
+    seoTitle: "IPL 2027 Teams: All 10 IPL Teams, Squads & Players",
     seoDescription:
-      "All 10 IPL 2027 teams: RCB, GT, SRH, RR, PBKS, DC, KKR, CSK, MI and LSG. 2026 records and names to watch.",
+      "Explore all 10 IPL 2027 teams, including team names, home grounds, squads, key players, and franchise details. Get the latest IPL team updates.",
   },
   "points-table": {
     slug: "points-table",
     kicker: "Standings",
     title: "Points table.",
     lede: "2027 cells stay empty until the league starts. Below is the closed IPL 2026 table — 2 points a win, NRR as tie-break, top four into the playoffs.",
-    seoTitle: "Points Table",
+    seoTitle: "IPL 2027 Points Table: Standings, Team Rankings & NRR",
     seoDescription:
-      "IPL 2027 points table will update after Match 1. See the completed IPL 2026 standings, NRR and playoff qualifiers.",
+      "Check the IPL 2027 points table for team standings, rankings, matches played, wins, losses, points, and net run rate (NRR). Follow the latest updates.",
   },
   about: {
     slug: "about",
     kicker: "About",
     title: "About Us",
     lede: "Your destination for the latest news, updates, and information about IPL 2027.",
-    seoTitle: "About Us",
+    seoTitle: "About IPL 2027",
     seoDescription:
-      "About IPL2027.co — independent IPL 2027 news, updates, teams, auction coverage, and fan information. Not affiliated with BCCI.",
+      "Learn about IPL2027.co, your source for IPL 2027 news, team details, match schedules, points tables, cricket videos, and the latest tournament updates.",
   },
 };
 

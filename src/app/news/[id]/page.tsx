@@ -21,8 +21,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const article = await getArticleBySlug(id);
-  if (!article) return { title: "Story" };
-  return { title: article.title, description: article.excerpt };
+  if (!article) return { title: { absolute: "IPL 2027 Story" }, description: "IPL 2027 news and updates on IPL2027.co." };
+  const title = `${article.title} | IPL 2027`;
+  const description = article.excerpt?.trim() || `Read ${article.title} — latest IPL 2027 news and analysis on IPL2027.co.`;
+  return {
+    title: { absolute: title },
+    description,
+    openGraph: { title, description, type: "article" },
+  };
 }
 
 function relatedArticles<T extends { id: string }>(articles: T[], currentId: string, count = 3) {

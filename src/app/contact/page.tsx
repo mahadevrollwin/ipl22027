@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import { ContactContent } from "@/components/legal/ContactContent";
 import { PageHero, Wrap } from "@/components/ui";
+import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description:
-    "Contact IPL2027.co with questions, feedback, or concerns. Email rollwin.seo@gmail.com — we aim to respond as soon as possible.",
-};
+export const metadata: Metadata = buildPageMetadata(PAGE_SEO.contact);
 
 export default function ContactPage() {
   return (

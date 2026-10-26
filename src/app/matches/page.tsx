@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { MatchCard } from "@/components/MatchCard";
 import { EmptyNote, PageHero, SectionHead, Wrap } from "@/components/ui";
 import { getMatches, getPage, getTeams } from "@/lib/cms";
+import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const revalidate = 60;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const page = await getPage("matches");
-  return { title: page.seoTitle || "Matches", description: page.seoDescription || page.lede };
+export function generateMetadata(): Metadata {
+  return buildPageMetadata(PAGE_SEO.matches);
 }
 
 export default async function MatchesPage() {

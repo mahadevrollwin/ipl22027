@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { TeamCard } from "@/components/TeamCard";
 import { PageHero, Wrap } from "@/components/ui";
 import { getPage, getTeams } from "@/lib/cms";
+import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const revalidate = 60;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const page = await getPage("teams");
-  return { title: page.seoTitle || "Teams", description: page.seoDescription || page.lede };
+export function generateMetadata(): Metadata {
+  return buildPageMetadata(PAGE_SEO.teams);
 }
 
 export default async function TeamsPage() {

@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { PageHero, Wrap } from "@/components/ui";
 import { VideoCard } from "@/components/VideoCard";
 import { getPage, getVideos } from "@/lib/cms";
+import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const revalidate = 60;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const page = await getPage("videos");
-  return { title: page.seoTitle || "Videos", description: page.seoDescription || page.lede };
+export function generateMetadata(): Metadata {
+  return buildPageMetadata(PAGE_SEO.videos);
 }
 
 export default async function VideosPage() {

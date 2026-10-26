@@ -24,10 +24,20 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const video = await getVideoBySlug(slug);
-  if (!video) return { title: "Video" };
+  if (!video) {
+    return {
+      title: { absolute: "IPL 2027 Video" },
+      description: "Watch IPL 2027 cricket videos and highlights on IPL2027.co.",
+    };
+  }
+  const title = `${video.title} | IPL 2027 Videos`;
+  const description =
+    video.meta?.trim() ||
+    `Watch ${video.title} — IPL 2027 cricket highlights and star-player videos on IPL2027.co.`;
   return {
-    title: video.title,
-    description: video.meta,
+    title: { absolute: title },
+    description,
+    openGraph: { title, description, type: "video.other" },
   };
 }
 

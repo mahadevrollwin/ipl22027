@@ -2,17 +2,12 @@ import type { Metadata } from "next";
 import { AboutContent } from "@/components/AboutContent";
 import { PageHero, Wrap } from "@/components/ui";
 import { getPage } from "@/lib/cms";
+import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const revalidate = 60;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const page = await getPage("about");
-  return {
-    title: page.seoTitle || "About Us",
-    description:
-      page.seoDescription ||
-      "About IPL2027.co — independent IPL 2027 news, updates, teams, auction coverage, and fan information. Not affiliated with BCCI.",
-  };
+export function generateMetadata(): Metadata {
+  return buildPageMetadata(PAGE_SEO.about);
 }
 
 export default async function AboutPage() {

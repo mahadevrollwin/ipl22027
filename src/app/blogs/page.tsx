@@ -4,12 +4,12 @@ import { Pagination } from "@/components/Pagination";
 import { EmptyNote, PageHero, Wrap } from "@/components/ui";
 import { getBlogs, getPage } from "@/lib/cms";
 import { paginateItems, parsePageParam } from "@/lib/pagination";
+import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const revalidate = 60;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const page = await getPage("blogs");
-  return { title: page.seoTitle || "Blogs", description: page.seoDescription || page.lede };
+export function generateMetadata(): Metadata {
+  return buildPageMetadata(PAGE_SEO.blogs);
 }
 
 export default async function BlogsPage({

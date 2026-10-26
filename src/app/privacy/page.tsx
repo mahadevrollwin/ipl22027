@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import { PrivacyContent } from "@/components/legal/PrivacyContent";
 import { PageHero, Wrap } from "@/components/ui";
+import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "Privacy Policy for IPL2027.co — how we handle personal information, cookies, analytics, and advertising. Last updated October 17, 2026.",
-};
+export const metadata: Metadata = buildPageMetadata(PAGE_SEO.privacy);
 
 export default function PrivacyPage() {
   return (

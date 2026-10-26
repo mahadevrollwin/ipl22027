@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CapLeaders } from "@/components/CapLeaders";
@@ -29,8 +30,11 @@ import {
   winnerCardColor,
   winnerTeamMeta,
 } from "@/lib/data";
+import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const revalidate = 60;
+
+export const metadata: Metadata = buildPageMetadata(PAGE_SEO.home);
 
 export default async function HomePage() {
   const [articles, videos, teams, matches, faqs, stats, awards, winners, settings] = await Promise.all([

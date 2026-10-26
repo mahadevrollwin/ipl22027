@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { StandingsTable } from "@/components/StandingsTable";
 import { EmptyNote, PageHero, SectionHead, Wrap } from "@/components/ui";
 import { getPage, getTeams, standingsFromTeams } from "@/lib/cms";
+import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const revalidate = 60;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const page = await getPage("points-table");
-  return { title: page.seoTitle || "Points Table", description: page.seoDescription || page.lede };
+export function generateMetadata(): Metadata {
+  return buildPageMetadata(PAGE_SEO["points-table"]);
 }
 
 export default async function PointsTablePage() {

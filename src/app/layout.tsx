@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.ipl2027.co"),
   title: {
     default: "IPL 2027 Live — Schedule, Points Table, Teams & Auction Watch",
-    template: "%s · IPL 2027 Live",
+    template: "%s | IPL2027.co",
   },
   description:
     "Unofficial IPL 2027 companion: mini-auction news, 2026 recap, points table, ten teams, and Season 20 countdown. Not affiliated with BCCI.",

@@ -7,6 +7,7 @@ import { PlayerCard } from "@/components/PlayerCard";
 import { TeamSlider } from "@/components/TeamSlider";
 import { Kicker, Wrap } from "@/components/ui";
 import { getTeamBySlug, getTeams } from "@/lib/cms";
+import { buildPageMetadata, getTeamSeo } from "@/lib/seo";
 import { groupPlayersByRole } from "@/lib/teamEnrich";
 
 export const revalidate = 60;
@@ -24,8 +25,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const team = await getTeamBySlug(id);
-  if (!team) return { title: "Team" };
-  return { title: team.name, description: team.summary || team.blurb };
+  if (!team) return buildPageMetadata(getTeamSeo(id));
+  return buildPageMetadata(getTeamSeo(id, team.name));
 }
 
 export default async function TeamPage({
