@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { AdLandscapeBanner, AdLargeRectangle, AdMediumRectangle } from "@/components/AdSlot";
+import { AdLargeRectangle, AdMediumRectangle } from "@/components/AdSlot";
 import { CapLeaders } from "@/components/CapLeaders";
 import { FaqList } from "@/components/FaqList";
 import { HeroVideos } from "@/components/HeroVideos";
@@ -83,14 +83,10 @@ export default async function HomePage() {
       </section>
 
       <Wrap>
-        <AdLandscapeBanner slotId="home-between-points-caps-1200x628" />
+        <AdMediumRectangle slotId="home-after-points-300x250" />
       </Wrap>
 
-      <CapLeaders
-        orange={ORANGE_CAP_2026}
-        purple={PURPLE_CAP_2026}
-        aside={<AdMediumRectangle slotId="home-caps-sidebar-300x250" className="py-0" />}
-      />
+      <CapLeaders orange={ORANGE_CAP_2026} purple={PURPLE_CAP_2026} />
 
       <section className="relative overflow-hidden bg-white py-12">
         <div

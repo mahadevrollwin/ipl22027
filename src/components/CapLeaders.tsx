@@ -134,12 +134,9 @@ function PurpleCapCard({ players }: { players: PurpleCapPlayer[] }) {
 export function CapLeaders({
   orange,
   purple,
-  aside,
 }: {
   orange: OrangeCapPlayer[];
   purple: PurpleCapPlayer[];
-  /** Optional side ad (e.g. 300×250) shown on the right on large screens */
-  aside?: ReactNode;
 }) {
   return (
     <section className="py-12">
@@ -148,22 +145,9 @@ export function CapLeaders({
           title="Race for the Caps"
           subtitle="The batters and bowlers who owned IPL 2026 — Orange Cap firepower meet Purple Cap craft."
         />
-        <div
-          className={
-            aside
-              ? "grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-8"
-              : undefined
-          }
-        >
-          <div className="grid min-w-0 gap-4 lg:grid-cols-2 lg:gap-5">
-            <OrangeCapCard players={orange} />
-            <PurpleCapCard players={purple} />
-          </div>
-          {aside ? (
-            <div className="mx-auto w-full max-w-[300px] lg:sticky lg:top-24 lg:mx-0 lg:justify-self-end">
-              {aside}
-            </div>
-          ) : null}
+        <div className="grid gap-4 lg:grid-cols-2 lg:gap-5">
+          <OrangeCapCard players={orange} />
+          <PurpleCapCard players={purple} />
         </div>
       </Wrap>
     </section>
