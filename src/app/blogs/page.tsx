@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AdMediumRectangle } from "@/components/AdSlot";
 import { NewsCard } from "@/components/NewsCard";
 import { Pagination } from "@/components/Pagination";
 import { EmptyNote, PageHero, Wrap } from "@/components/ui";
@@ -33,7 +34,15 @@ export default async function BlogsPage({
           {blogs.length ? (
             <>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {items.map((article) => (
+                {items.slice(0, 3).map((article) => (
+                  <NewsCard key={article.id} article={article} />
+                ))}
+                {items.length > 3 ? (
+                  <div className="col-span-full">
+                    <AdMediumRectangle slotId="blogs-list-mid-300x250" className="py-2 sm:py-4" />
+                  </div>
+                ) : null}
+                {items.slice(3).map((article) => (
                   <NewsCard key={article.id} article={article} />
                 ))}
               </div>

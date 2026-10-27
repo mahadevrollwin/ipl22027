@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AdLargeRectangle } from "@/components/AdSlot";
 import { AboutContent } from "@/components/AboutContent";
 import { PageHero, Wrap } from "@/components/ui";
 import { getPage } from "@/lib/cms";
@@ -23,6 +24,7 @@ export default async function AboutPage() {
       <section className="py-12 sm:py-16">
         <Wrap>
           <AboutContent />
+          <AdLargeRectangle slotId="about-mid-336x280" />
         </Wrap>
       </section>
     </>

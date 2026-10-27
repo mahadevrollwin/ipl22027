@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="728" height="90" viewBox="0 0 728 90" role="img" aria-label="Advertisement placeholder 728x90">
+  <rect width="728" height="90" fill="#e4eaf8"/>
+  <rect x="1.5" y="1.5" width="725" height="87" fill="none" stroke="#8a97b0" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="364.0" y="39.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#132e73">Advertisement</text>
+  <text x="364.0" y="59.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#5b6b8c">728x90 placeholder</text>
+</svg>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AdMediumRectangle } from "@/components/AdSlot";
 import { TermsContent } from "@/components/legal/TermsContent";
 import { PageHero, Wrap } from "@/components/ui";
 import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
@@ -16,6 +17,7 @@ export default function TermsPage() {
       <section className="py-12 sm:py-16">
         <Wrap>
           <TermsContent />
+          <AdMediumRectangle slotId="terms-mid-300x250" />
         </Wrap>
       </section>
     </>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AdMediumRectangle } from "@/components/AdSlot";
 import { NewsCard } from "@/components/NewsCard";
 import { Pagination } from "@/components/Pagination";
 import { PageHero, Wrap } from "@/components/ui";
@@ -31,7 +32,15 @@ export default async function NewsPage({
       <section className="py-16">
         <Wrap>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {items.map((n) => (
+            {items.slice(0, 3).map((n) => (
+              <NewsCard key={n.id} article={n} />
+            ))}
+            {items.length > 3 ? (
+              <div className="col-span-full">
+                <AdMediumRectangle slotId="news-list-mid-300x250" className="py-2 sm:py-4" />
+              </div>
+            ) : null}
+            {items.slice(3).map((n) => (
               <NewsCard key={n.id} article={n} />
             ))}
           </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdLargeRectangle, AdMediumRectangle } from "@/components/AdSlot";
 import { NewsCard } from "@/components/NewsCard";
 import { PortableBody } from "@/components/PortableBody";
 import { Kicker } from "@/components/ui";
@@ -73,7 +74,9 @@ export default async function ArticlePage({
           className="mt-6 h-auto w-full rounded-2xl object-contain"
         />
       ) : null}
+      <AdMediumRectangle slotId={`article-${article.id}-after-cover-300x250`} className="py-6" />
       <PortableBody value={article.portableBody} fallback={article.body} blocks={article.blocks} />
+      <AdLargeRectangle slotId={`article-${article.id}-after-body-336x280`} className="py-6" />
       <p className="mt-7">
         <Link href={listingHref} className="text-sm font-bold text-teal">
           ← {listingLabel}

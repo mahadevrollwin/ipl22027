@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdMediumRectangle } from "@/components/AdSlot";
 import { FormPips } from "@/components/TeamBadge";
 import { PlayerCard } from "@/components/PlayerCard";
 import { TeamSlider } from "@/components/TeamSlider";
@@ -139,6 +140,10 @@ export default async function TeamPage({
             <FormPips form={team.record2026.form} />
           </div>
         </article>
+      </Wrap>
+
+      <Wrap>
+        <AdMediumRectangle slotId={`team-${team.id}-mid-300x250`} />
       </Wrap>
 
       {team.watch.length ? (

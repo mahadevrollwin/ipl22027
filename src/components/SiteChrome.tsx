@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { AdFooterBanner, AdLeaderboard } from "@/components/AdSlot";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 
@@ -19,9 +20,11 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
         Skip to content
       </a>
       <Header />
+      <AdLeaderboard slotId="global-top" />
       <main id="main" className="relative z-[1] flex-1">
         {children}
       </main>
+      <AdFooterBanner slotId="global-bottom" />
       <Footer />
     </>
   );
