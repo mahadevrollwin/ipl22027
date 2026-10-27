@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AdMediumRectangle } from "@/components/AdSlot";
 import { VideoCard } from "@/components/VideoCard";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { Kicker } from "@/components/ui";
@@ -99,7 +98,6 @@ export default async function VideoDetailPage({
           className="aspect-video h-auto w-full bg-black object-contain"
         />
       </div>
-      <AdMediumRectangle slotId={`video-${getVideoSlug(video)}-after-player-300x250`} className="py-6" />
       <p className="mt-7">
         <Link href="/videos" className="text-sm font-bold text-teal">
           ← All videos

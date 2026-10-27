@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AdMediumRectangle } from "@/components/AdSlot";
 import { PrivacyContent } from "@/components/legal/PrivacyContent";
 import { PageHero, Wrap } from "@/components/ui";
 import { buildPageMetadata, PAGE_SEO } from "@/lib/seo";
@@ -17,7 +16,6 @@ export default function PrivacyPage() {
       <section className="py-12 sm:py-16">
         <Wrap>
           <PrivacyContent />
-          <AdMediumRectangle slotId="privacy-mid-300x250" />
         </Wrap>
       </section>
     </>

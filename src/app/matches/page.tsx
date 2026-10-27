@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AdMediumRectangle } from "@/components/AdSlot";
 import { MatchCard } from "@/components/MatchCard";
 import { EmptyNote, PageHero, SectionHead, Wrap } from "@/components/ui";
 import { getMatches, getPage, getTeams } from "@/lib/cms";
@@ -31,7 +30,6 @@ export default async function MatchesPage() {
               ))}
             </div>
           </div>
-          <AdMediumRectangle slotId="matches-mid-300x250" />
           <div className="mt-9">
             <SectionHead title="Selected 2026 league nights" />
             <div className="grid gap-3">

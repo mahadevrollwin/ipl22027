@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AdMediumRectangle } from "@/components/AdSlot";
 import { StandingsTable } from "@/components/StandingsTable";
 import { EmptyNote, PageHero, SectionHead, Wrap } from "@/components/ui";
 import { getPage, getTeams, standingsFromTeams } from "@/lib/cms";
@@ -22,7 +21,6 @@ export default async function PointsTablePage() {
           <EmptyNote title="IPL 2027">
             No matches played. Table updates here after the first ball of Season 20.
           </EmptyNote>
-          <AdMediumRectangle slotId="points-table-mid-300x250" />
           <div className="mt-9">
             <SectionHead title="IPL 2026 · final" />
             <StandingsTable rows={standingsFromTeams(teams)} />
