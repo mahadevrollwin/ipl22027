@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export type AdSize = "300x250" | "728x90" | "336x280" | "320x50" | "320x100";
+export type AdSize = "300x250" | "728x90" | "336x280" | "320x50" | "320x100" | "1200x628";
 
 const AD_DIMS: Record<AdSize, { width: number; height: number }> = {
   "300x250": { width: 300, height: 250 },
@@ -8,6 +8,7 @@ const AD_DIMS: Record<AdSize, { width: number; height: number }> = {
   "336x280": { width: 336, height: 280 },
   "320x50": { width: 320, height: 50 },
   "320x100": { width: 320, height: 100 },
+  "1200x628": { width: 1200, height: 628 },
 };
 
 type PlayerCreative = {
@@ -51,6 +52,7 @@ function AdCreative({ size, slotId }: { size: AdSize; slotId: string }) {
   const { width, height } = AD_DIMS[size];
   const player = pickCreative(slotId);
   const isBanner = size === "728x90" || size === "320x50" || size === "320x100";
+  const isLandscape = size === "1200x628";
   const isCompact = size === "320x50";
 
   return (
@@ -64,7 +66,9 @@ function AdCreative({ size, slotId }: { size: AdSize; slotId: string }) {
         alt=""
         fill
         sizes={`${width}px`}
-        className={`pointer-events-none object-cover ${isBanner ? "object-[center_20%]" : "object-top"}`}
+        className={`pointer-events-none object-cover ${
+          isBanner ? "object-[center_20%]" : isLandscape ? "object-[center_18%]" : "object-top"
+        }`}
         unoptimized
       />
 
@@ -74,7 +78,9 @@ function AdCreative({ size, slotId }: { size: AdSize; slotId: string }) {
         style={{
           background: isBanner
             ? `linear-gradient(90deg, #0b1638f2 0%, #0b1638d9 42%, ${player.accent}55 100%)`
-            : `linear-gradient(180deg, ${player.accent}33 0%, #0b163800 28%, #0b1638cc 72%, #070e24f5 100%)`,
+            : isLandscape
+              ? `linear-gradient(105deg, #070e24f0 0%, #0b1638cc 38%, ${player.accent}40 72%, #070e2488 100%)`
+              : `linear-gradient(180deg, ${player.accent}33 0%, #0b163800 28%, #0b1638cc 72%, #070e24f5 100%)`,
         }}
       />
       <div
@@ -120,6 +126,22 @@ function AdCreative({ size, slotId }: { size: AdSize; slotId: string }) {
               className="object-cover object-top"
               unoptimized
             />
+          </div>
+        </div>
+      ) : isLandscape ? (
+        <div className="pointer-events-none absolute inset-0 flex items-end p-6 sm:p-8 md:p-10">
+          <div className="max-w-[36rem]">
+            <div
+              className="mb-3 h-1.5 w-16 rounded-full"
+              style={{ background: `linear-gradient(90deg, ${player.accent}, #f5c518)` }}
+            />
+            <p className="text-[22px] font-extrabold tracking-wide text-white sm:text-[28px]">
+              Advertisement
+            </p>
+            <p className="mt-1 text-[14px] font-semibold text-white/75 sm:text-[15px]">
+              {size} placeholder
+            </p>
+            <p className="mt-3 text-[15px] font-bold text-gold sm:text-[16px]">{player.name}</p>
           </div>
         </div>
       ) : (
@@ -203,6 +225,15 @@ export function AdLargeRectangle({ slotId, className = "" }: { slotId: string; c
   return (
     <div className={`py-6 sm:py-8 ${className}`.trim()}>
       <AdSlot size="336x280" slotId={slotId} />
+    </div>
+  );
+}
+
+/** Between-section landscape banner (1200×628). */
+export function AdLandscapeBanner({ slotId, className = "" }: { slotId: string; className?: string }) {
+  return (
+    <div className={`w-full py-6 sm:py-8 ${className}`.trim()}>
+      <AdSlot size="1200x628" slotId={slotId} />
     </div>
   );
 }
